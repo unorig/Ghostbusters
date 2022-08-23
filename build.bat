@@ -1,0 +1,3 @@
+C:\C64\Assemblers\64tass\64tass.exe -a "C:\C64\Ghostbusters\ghostbusters.prg.1100_64tass.S" -o "C:\C64\Ghostbusters\ghostbusters.prg.1100_64tass.compiled.prg"
+C:\C64\Tools\Packing\exomizer.exe sfx $1100 -x 1 "C:\C64\Ghostbusters\ghostbusters.prg.1100_64tass.compiled.prg" -o "C:\C64\Ghostbusters\ghostbusters.compressed.prg" -p 1
+C:\C64\Emulators\C64Debugger\C64Debugger.exe "C:\C64\Ghostbusters\ghostbusters.compressed.prg"
