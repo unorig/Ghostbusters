@@ -3698,11 +3698,11 @@ _L111E  .byte   $a9
         .byte   $85
         .byte   $8c
         .text   "mnmnmnrrxnstyzmnmn"
-        .byte   $84
+_L3620  .byte   $84
         .byte   $85
         .byte   $b1
         .byte   $b2
-        .byte   $b3
+_L3624  .byte   $b3
         .byte   $b4
         .byte   $b5
         .byte   $b6
@@ -3793,10 +3793,11 @@ _L111E  .byte   $a9
         .byte   $0a
         .byte   $0a
         .byte   $09
+_L374B  .byte   $09
         .byte   $09
         .byte   $09
-        .byte   $09
-        .text   $0a,$0a,$0a,$0a,$0a,$0a
+        .text   $0a,$0a,$0a,$0a,$0a
+_L3753  .byte   $0a
         .fill   8,$0e
         .text   $0a,$0a,$0a,$0a
         .byte   $88
@@ -3987,8 +3988,10 @@ _L111E  .byte   $a9
         .byte   $88
         .byte   $88
         .byte   $88
-        .text   $0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a
-        .text   $0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a
+        .byte   $0a
+        .byte   $0a
+_L389E  .text   $0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a
+        .text   $0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a
         .byte   $88
         .byte   $88
         .byte   $0a
@@ -4505,7 +4508,7 @@ _L111E  .byte   $a9
         .byte   $ee
         .byte   $ff
         .byte   $ff
-        .byte   $ef
+_L3BE9  .byte   $ef
         .byte   $ef
         .byte   $bf
         .byte   $af
@@ -8645,7 +8648,7 @@ _L111E  .byte   $a9
         .byte   $00
         .byte   $ad
         .byte   $db
-        .byte   $f4
+_L5400  .byte   $f4
         .byte   $8d
         .byte   $1b
         .byte   $f4
@@ -8886,7 +8889,7 @@ _L111E  .byte   $a9
         .byte   $02
         .byte   $05
         .byte   $d7
-        .byte   $03
+_L5500  .byte   $03
         .byte   $17
         .byte   $00
         .byte   $27
@@ -9126,7 +9129,7 @@ _L111E  .byte   $a9
         .byte   $e9
         .byte   $17
         .byte   $c8
-        .byte   $17
+_L5600  .byte   $17
         .byte   $87
         .byte   $15
         .byte   $e7
@@ -9298,7 +9301,7 @@ _L111E  .byte   $a9
         .byte   $f9
         .byte   $7e
         .byte   $02
-        .byte   $5a
+_L56C0  .byte   $5a
         .byte   $8a
         .byte   $16
         .byte   $03
@@ -9458,7 +9461,7 @@ _L111E  .byte   $a9
         .byte   $73
         .byte   $c9
         .byte   $99
-        .byte   $d9
+_L5770  .byte   $d9
         .byte   $8c
         .byte   $e3
         .byte   $c3
@@ -9535,7 +9538,7 @@ _L111E  .byte   $a9
         .byte   $e8
         .byte   $68
         .byte   $d6
-        .byte   $83
+_L57C0  .byte   $83
         .byte   $d3
         .byte   $15
         .byte   $1e
@@ -9587,14 +9590,14 @@ _L111E  .byte   $a9
         .byte   $75
         .byte   $c5
         .byte   $15
-        .byte   $fd
+_L57F8  .byte   $fd
         .byte   $a2
         .byte   $aa
         .byte   $54
         .byte   $4a
         .byte   $d4
         .byte   $94
-        .byte   $75
+_L57FF  .byte   $75
         .byte   $8c
         .byte   $77
         .byte   $77
@@ -12585,7 +12588,7 @@ _L111E  .byte   $a9
         .byte   $60
         .byte   $68
         .byte   $40
-        .byte   $ee
+_L643B  .byte   $ee
         .byte   $ef
         .byte   $ef
         .byte   $ef
@@ -20961,61 +20964,42 @@ _L111E  .byte   $a9
         .byte   $d0
         .byte   $f3
         .byte   $60
-        .byte   $a0
-        .byte   $27
-        .byte   $b9
-        .byte   $8a
-        .byte   $ea
-        .byte   $99
-        .byte   $c0
-        .byte   $57
-        .byte   $88
-        .byte   $10
-        .byte   $f7
-        .byte   $60
-        .byte   $48
-        .byte   $8a
-        .text   "h",$98,"hX"
-        .byte   $a5
-        .byte   $eb
-        .byte   $d0
-        .byte   $51
-        .byte   $ad
-        .byte   $19
-        .byte   $d0
-        .byte   $29
-        .byte   $01
-        .byte   $d0
-        .byte   $03
-        .byte   $4c
-        .byte   $c0
-        .byte   $8f
-        .byte   $a5
-        .byte   $20
-        .byte   $d0
-        .byte   $46
-        .byte   $a5
-        .byte   $9a
-        .byte   $09
-        .byte   $18
-        .byte   $a2
-        .byte   $c1
-        .byte   $ec
-        .byte   $12
-        .byte   $d0
-        .byte   $d0
-        .byte   $fb
-        .byte   $a2
-        .byte   $0a
-        .byte   $ca
-        .byte   $10
-        .byte   $fd
-        .byte   $8d
-        .byte   $11
-        .text   "P v",$97,"l"
-        .byte   $b7
-        .byte   $8e
-        .byte   $fd
+
+        ldy     #$27
+_L8E6C  lda     $ea8a,y
+        sta     _L57C0,y
+        dey
+        bpl     _L8E6C
+        rts
+
+        pha
+        txa
+        pha
+        tya
+        pha
+        cld
+        lda     $eb
+        bne     _L8ED1
+        lda     $d019
+        and     #$01
+        bne     _L8E8A
+        jmp     _L8FC0
+
+_L8E8A  lda     $20
+        bne     _L8ED4
+        lda     $9a
+        ora     #$18
+        ldx     #$c1
+_L8E94  cpx     $d012
+        bne     _L8E94
+        ldx     #$0a
+_L8E9B  dex
+        bpl     _L8E9B
+        sta     $d011
+        jsr     _L9756
+        jmp     _L8EB7
+
+_L8EA7  .byte   $fd
         .byte   $fd
         .byte   $fd
         .byte   $fe
@@ -21031,266 +21015,143 @@ _L111E  .byte   $a9
         .byte   $03
         .byte   $03
         .byte   $03
-        .byte   $a5
-        .byte   $9a
-        .byte   $29
-        .byte   $07
-        .byte   $aa
-        .byte   $bd
-        .byte   $3b
-        .byte   $64
-        .byte   $a2
-        .byte   $1b
-        .text   "M",$12,"PP"
-        .byte   $fb
-        .byte   $a0
-        .byte   $0c
-        .byte   $88
-        .byte   $d0
-        .byte   $fd
-        .byte   $8e
-        .byte   $11
-        .byte   $d0
-        .byte   $20
-        .byte   $a1
-        .byte   $97
-        .byte   $4c
-        .byte   $c0
-        .byte   $8f
-        .byte   $a5
-        .byte   $06
-        .text   $0a,$0a,$0a,"e"
-        .byte   $06
-        .byte   $0a
-        .byte   $26
-        .byte   $06
-        .byte   $e6
-        .byte   $08
-        .byte   $ad
-        .byte   $73
-        .byte   $ea
-        .byte   $f0
-        .byte   $08
-        .byte   $a5
-        .byte   $08
-        .byte   $29
-        .byte   $07
-        .byte   $c9
-        .byte   $01
-        .byte   $f0
-        .byte   $f1
-        .byte   $20
-        .byte   $56
-        .byte   $97
-        .byte   $a5
-        .text   ":I",$12,$90,"i"
-        .byte   $a5
-        .byte   $49
-        .byte   $29
-        .byte   $07
-        .byte   $85
-        .byte   $dc
-        .byte   $ad
-        .byte   $16
-        .byte   $d0
-        .byte   $29
-        .byte   $f8
-        .byte   $05
-        .byte   $dc
-        .byte   $a8
-        .byte   $a2
-        .byte   $06
-        .byte   $a5
-        .byte   $3a
-        .byte   $c9
-        .byte   $2d
-        .byte   $b0
-        .byte   $06
-        .byte   $c9
-        .byte   $2a
-        .byte   $90
-        .byte   $02
-        .byte   $a2
-        .byte   $00
-        .byte   $a9
-        .byte   $df
-        .text   "M",$12,"PP"
-        .byte   $fb
-        .text   " p",$90," p",$90
-        .byte   $e6
-        .byte   $dc
-        .byte   $ea
-        .byte   $ea
-        .byte   $ea
-        .byte   $8e
-        .byte   $25
-        .byte   $d0
-        .byte   $8e
-        .byte   $2c
-        .byte   $d0
-        .byte   $8e
-        .byte   $2d
-        .byte   $d0
-        .byte   $8e
-        .byte   $27
-        .byte   $d0
-        .byte   $8e
-        .byte   $21
-        .byte   $d0
-        .byte   $8e
-        .byte   $28
-        .byte   $d0
-        .byte   $8e
-        .byte   $2a
-        .byte   $d0
-        .byte   $8e
-        .byte   $2b
-        .byte   $d0
-        .byte   $8c
-        .byte   $16
-        .byte   $d0
-        .byte   $a2
-        .byte   $0e
-        .byte   $a9
-        .byte   $00
-        .byte   $9d
-        .byte   $00
-        .byte   $d0
-        .byte   $ca
-        .byte   $ca
-        .byte   $10
-        .byte   $f9
-        .byte   $8d
-        .byte   $10
-        .byte   $d0
-        .byte   $a2
-        .byte   $00
-        .byte   $a9
-        .byte   $ec
-        .text   "M",$12,"PP"
-        .byte   $fb
-        .text   " p",$90," p",$90," p",$90
-        .byte   $e6
-        .byte   $dc
-        .byte   $ea
-        .byte   $ea
-        .byte   $ea
-        .byte   $ea
-        .byte   $8e
-        .byte   $21
-        .byte   $d0
-        .byte   $8e
-        .byte   $27
-        .byte   $d0
-        .byte   $8e
-        .byte   $28
-        .byte   $d0
-        .byte   $20
-        .byte   $a1
-        .byte   $97
-        .byte   $a9
-        .byte   $ff
-        .byte   $8d
-        .byte   $15
-        .byte   $d0
-        .byte   $ad
-        .byte   $16
-        .byte   $d0
-        .byte   $09
-        .byte   $17
-        .byte   $8d
-        .byte   $16
-        .byte   $d0
-        .byte   $a2
-        .byte   $07
-        .byte   $8a
-        .byte   $0a
-        .byte   $a8
-        .byte   $b9
-        .byte   $a0
-        .byte   $00
-        .byte   $38
-        .byte   $2a
-        .byte   $26
-        .byte   $dc
-        .byte   $99
-        .byte   $00
-        .byte   $d0
-        .byte   $b9
-        .byte   $a1
-        .byte   $00
-        .byte   $99
-        .byte   $01
-        .byte   $d0
-        .byte   $b5
-        .byte   $2b
-        .byte   $9d
-        .byte   $f8
-        .byte   $57
-        .byte   $a8
-        .byte   $b9
-        .byte   $49
-        .byte   $a9
-        .byte   $9d
-        .byte   $27
-        .byte   $d0
-        .byte   $ca
-        .byte   $10
-        .byte   $de
-        .byte   $a5
-        .byte   $dc
-        .byte   $8d
-        .byte   $10
-        .byte   $d0
-        .byte   $a5
-        .byte   $3b
-        .byte   $8d
-        .byte   $21
-        .byte   $d0
-        .byte   $a5
-        .byte   $1d
-        .byte   $8d
-        .byte   $25
-        .byte   $d0
-        .byte   $a5
-        .byte   $1e
-        .byte   $8d
-        .byte   $26
-        .byte   $d0
-        .byte   $a9
-        .byte   $01
-        .byte   $85
-        .byte   $e2
-        .byte   $20
-        .byte   $f0
-        .byte   $93
-        .byte   $20
-        .byte   $e9
-        .byte   $3b
-        .byte   $a9
-        .byte   $81
-        .byte   $8d
-        .byte   $19
-        .byte   $d0
-        .byte   $a9
-        .byte   $b8
-        .byte   $8d
-        .byte   $12
-        .byte   $d0
-        .byte   $ad
-        .byte   $11
-        .byte   $d0
-        .byte   $29
-        .byte   $7f
-        .byte   $8d
-        .byte   $11
-        .byte   $d0
-        .byte   $68
-        .byte   $a8
-        .byte   $68
-        .byte   $aa
-        .byte   $68
-        .byte   $40
+
+_L8EB7  lda     $9a
+        and     #$07
+        tax
+        lda     _L643B,x
+        ldx     #$1b
+_L8EC1  cmp     $d012
+        bne     _L8EC1
+        ldy     #$0c
+_L8EC8  dey
+        bne     _L8EC8
+        stx     $d011
+        jsr     _L97A1
+_L8ED1  jmp     _L8FC0
+
+_L8ED4  lda     $06
+        asl     a
+        asl     a
+        asl     a
+        eor     $06
+        asl     a
+        rol     $06
+_L8EDE  inc     $08
+        lda     $ea73
+        beq     _L8EED
+        lda     $08
+        and     #$07
+        cmp     #$01
+        beq     _L8EDE
+_L8EED  jsr     _L9756
+        lda     $3a
+        cmp     #$12
+        bcc     _L8F3F
+        lda     $49
+        and     #$07
+        sta     $dc
+        lda     $d016
+        and     #$f8
+        ora     $dc
+        tay
+        ldx     #$06
+        lda     $3a
+        cmp     #$2d
+        bcs     _L8F12
+        cmp     #$2a
+        bcc     _L8F12
+        ldx     #$00
+_L8F12  lda     #$df
+_L8F14  cmp     $d012
+        bne     _L8F14
+        jsr     _L9050
+        jsr     _L9050
+        inc     $dc
+        nop
+        nop
+        nop
+        stx     $d025
+        stx     $d02c
+        stx     $d02d
+        stx     $d027
+        stx     $d021
+        stx     $d028
+        stx     $d02a
+        stx     $d02b
+        sty     $d016
+_L8F3F  ldx     #$0e
+        lda     #$00
+_L8F43  sta     $d000,x
+        dex
+        dex
+        bpl     _L8F43
+        sta     $d010
+        ldx     #$00
+        lda     #$ec
+_L8F51  cmp     $d012
+        bne     _L8F51
+        jsr     _L9050
+        jsr     _L9050
+        jsr     _L9050
+        inc     $dc
+        nop
+        nop
+        nop
+        nop
+        stx     $d021
+        stx     $d027
+        stx     $d028
+        jsr     _L97A1
+        lda     #$ff
+        sta     $d015
+        lda     $d016
+        ora     #$17
+        sta     $d016
+        ldx     #$07
+_L8F80  txa
+        asl     a
+        tay
+        lda     $00a0,y
+        sec
+        rol     a
+        rol     $dc
+        sta     $d000,y
+        lda     $00a1,y
+        sta     $d001,y
+        lda     $2b,x
+        sta     _L57F8,x
+        tay
+        lda     _LA949,y
+        sta     $d027,x
+        dex
+        bpl     _L8F80
+        lda     $dc
+        sta     $d010
+        lda     $3b
+        sta     $d021
+        lda     $1d
+        sta     $d025
+        lda     $1e
+        sta     $d026
+        lda     #$01
+        sta     $e2
+        jsr     _L93F0
+        jsr     _L3BE9
+_L8FC0  lda     #$81
+        sta     $d019
+        lda     #$b8
+        sta     $d012
+        lda     $d011
+        and     #$7f
+        sta     $d011
+        pla
+        tay
+        pla
+        tax
+        pla
+        rti
+
         .byte   $a9
         .byte   $7f
         .byte   $8d
@@ -21407,7 +21268,9 @@ _L111E  .byte   $a9
         .byte   $20
         .byte   $b9
         .byte   $95
-        .byte   $60
+
+_L9050  rts
+
         .byte   $1f
         .byte   $1f
         .byte   $0f
@@ -21755,218 +21618,93 @@ _L111E  .byte   $a9
         .byte   $10
         .byte   $f5
         .byte   $60
-        .byte   $8d
-        .byte   $6d
-        .byte   $ea
-        .byte   $8e
-        .byte   $6f
-        .byte   $ea
-        .byte   $8c
-        .byte   $6e
-        .byte   $ea
-        .byte   $a9
-        .byte   $01
-        .byte   $8d
-        .byte   $15
-        .byte   $d0
-        .byte   $ae
-        .byte   $6b
-        .byte   $ea
-        .byte   $d0
-        .byte   $5a
-        .byte   $ce
-        .byte   $71
-        .byte   $ea
-        .byte   $10
-        .byte   $55
-        .byte   $a0
-        .byte   $00
-        .byte   $8c
-        .byte   $71
-        .byte   $ea
-        .byte   $ad
-        .byte   $69
-        .byte   $ea
-        .byte   $85
-        .byte   $23
-        .byte   $ad
-        .byte   $6a
-        .byte   $ea
-        .byte   $85
-        .byte   $24
-        .byte   $b1
-        .byte   $23
-        .byte   $8d
-        .byte   $89
-        .byte   $ea
-        .byte   $08
-        .byte   $2c
-        .byte   $89
-        .byte   $ea
-        .byte   $50
-        .byte   $02
-        .byte   $29
-        .byte   $bf
-        .byte   $28
-        .byte   $10
-        .byte   $13
-        .byte   $c9
-        .byte   $bf
-        .byte   $d0
-        .byte   $08
-        .byte   $a9
-        .byte   $00
-        .byte   $8d
-        .byte   $66
-        .byte   $ea
-        .byte   $8d
-        .byte   $68
-        .byte   $ea
-        .byte   $29
-        .byte   $7f
-        .byte   $8d
-        .byte   $71
-        .byte   $ea
-        .byte   $a9
-        .byte   $00
-        .byte   $8d
-        .byte   $6c
-        .byte   $ea
-        .byte   $ee
-        .byte   $69
-        .byte   $ea
-        .byte   $d0
-        .byte   $03
-        .byte   $ee
-        .byte   $6a
-        .byte   $ea
-        .byte   $ad
-        .byte   $6a
-        .byte   $ea
-        .byte   $c9
-        .byte   $93
-        .byte   $90
-        .byte   $11
-        .byte   $ad
-        .byte   $69
-        .byte   $ea
-        .byte   $c9
-        .byte   $e1
-        .byte   $90
-        .byte   $0a
-        .byte   $a9
-        .byte   $93
-        .byte   $8d
-        .byte   $6a
-        .byte   $ea
-        .byte   $a9
-        .byte   $e0
-        .byte   $8d
-        .byte   $69
-        .byte   $ea
-        .byte   $bd
-        .byte   $a7
-        .byte   $8e
-        .byte   $18
-        .byte   $6d
-        .byte   $67
-        .byte   $ea
-        .byte   $8d
-        .byte   $67
-        .byte   $ea
-        .byte   $ee
-        .byte   $6b
-        .byte   $ea
-        .byte   $ad
-        .byte   $6b
-        .byte   $ea
-        .byte   $29
-        .byte   $0f
-        .byte   $8d
-        .byte   $6b
-        .byte   $ea
-        .byte   $ad
-        .byte   $66
-        .byte   $ea
-        .byte   $18
-        .byte   $6d
-        .byte   $6c
-        .byte   $ea
-        .byte   $8d
-        .byte   $66
-        .byte   $ea
-        .byte   $ad
-        .byte   $68
-        .byte   $ea
-        .byte   $69
-        .byte   $00
-        .byte   $8d
-        .byte   $68
-        .byte   $ea
-        .byte   $f0
-        .byte   $0f
-        .byte   $ad
-        .byte   $66
-        .byte   $ea
-        .byte   $c9
-        .byte   $58
-        .byte   $90
-        .byte   $08
-        .byte   $a9
-        .byte   $00
-        .byte   $8d
-        .byte   $66
-        .byte   $ea
-        .byte   $8d
-        .byte   $68
-        .byte   $ea
-        .byte   $ad
-        .byte   $67
-        .byte   $ea
-        .byte   $8d
-        .byte   $01
-        .byte   $d0
-        .byte   $8d
-        .byte   $03
-        .byte   $d0
-        .byte   $ad
-        .byte   $66
-        .byte   $ea
-        .byte   $8d
-        .byte   $00
-        .byte   $d0
-        .byte   $8d
-        .byte   $02
-        .byte   $d0
-        .byte   $ad
-        .byte   $68
-        .byte   $ea
-        .byte   $0a
-        .byte   $0d
-        .byte   $68
-        .byte   $ea
-        .byte   $85
-        .byte   $23
-        .byte   $ad
-        .byte   $10
-        .byte   $d0
-        .byte   $29
-        .byte   $fc
-        .byte   $05
-        .byte   $23
-        .byte   $8d
-        .byte   $10
-        .byte   $d0
-        .byte   $ad
-        .byte   $6d
-        .byte   $ea
-        .byte   $ae
-        .byte   $6f
-        .byte   $ea
-        .byte   $ac
-        .byte   $6e
-        .byte   $ea
-        .byte   $60
+
+        sta     $ea6d
+        stx     $ea6f
+        sty     $ea6e
+        lda     #$01
+        sta     $d015
+        ldx     $ea6b
+        bne     _L9235
+        dec     $ea71
+        bpl     _L9235
+        ldy     #$00
+        sty     $ea71
+        lda     $ea69
+        sta     $23
+        lda     $ea6a
+        sta     $24
+        lda     ($23),y
+        sta     $ea89
+        php
+        bit     $ea89
+        bvc     _L91FC
+        and     #$bf
+_L91FC  plp
+        bpl     _L9212
+        cmp     #$bf
+        bne     _L920B
+        lda     #$00
+        sta     $ea66
+        sta     $ea68
+_L920B  and     #$7f
+        sta     $ea71
+        lda     #$00
+_L9212  sta     $ea6c
+        inc     $ea69
+        bne     _L921D
+        inc     $ea6a
+_L921D  lda     $ea6a
+        cmp     #$93
+        bcc     _L9235
+        lda     $ea69
+        cmp     #$e1
+        bcc     _L9235
+        lda     #$93
+        sta     $ea6a
+        lda     #$e0
+        sta     $ea69
+_L9235  lda     _L8EA7,x
+        clc
+        adc     $ea67
+        sta     $ea67
+        inc     $ea6b
+        lda     $ea6b
+        and     #$0f
+        sta     $ea6b
+        lda     $ea66
+        clc
+        adc     $ea6c
+        sta     $ea66
+        lda     $ea68
+        adc     #$00
+        sta     $ea68
+        beq     _L926D
+        lda     $ea66
+        cmp     #$58
+        bcc     _L926D
+        lda     #$00
+        sta     $ea66
+        sta     $ea68
+_L926D  lda     $ea67
+        sta     $d001
+        sta     $d003
+        lda     $ea66
+        sta     $d000
+        sta     $d002
+        lda     $ea68
+        asl     a
+        ora     $ea68
+        sta     $23
+        lda     $d010
+        and     #$fc
+        ora     $23
+        sta     $d010
+        lda     $ea6d
+        ldx     $ea6f
+        ldy     $ea6e
+        rts
+
         .byte   $a2
         .byte   $00
         .byte   $8e
@@ -22292,430 +22030,240 @@ _L111E  .byte   $a9
         .byte   $02
         .byte   $86
         .byte   $bf
-        .byte   $60
-        .byte   $a2
-        .byte   $02
-        .byte   $a9
-        .byte   $00
-        .byte   $95
-        .byte   $82
-        .byte   $95
-        .byte   $85
-        .byte   $95
-        .byte   $88
-        .byte   $ca
-        .byte   $10
-        .byte   $f5
-        .byte   $60
-        .byte   $24
-        .byte   $47
-        .byte   $30
-        .byte   $ed
-        .byte   $a2
-        .byte   $02
-        .byte   $8e
-        .byte   $75
-        .byte   $ea
-        .byte   $bd
-        .byte   $b4
-        .byte   $a2
-        .byte   $85
-        .byte   $e1
-        .byte   $a8
-        .byte   $a5
-        .byte   $08
-        .byte   $29
-        .byte   $03
-        .byte   $d0
-        .byte   $18
-        .byte   $bd
-        .byte   $b7
-        .byte   $a2
-        .byte   $85
-        .byte   $e3
-        .byte   $bd
-        .byte   $ba
-        .byte   $a2
-        .byte   $85
-        .byte   $e4
-        .byte   $b5
-        .byte   $88
-        .byte   $30
-        .byte   $07
-        .byte   $d6
-        .byte   $88
-        .byte   $30
-        .byte   $09
-        .byte   $4c
-        .byte   $ff
-        .byte   $94
-        .byte   $4c
-        .byte   $8c
-        .text   $95,"l",$1f,$95
-        .byte   $b4
-        .byte   $82
-        .byte   $b1
-        .byte   $e3
-        .byte   $c9
-        .byte   $ff
-        .byte   $d0
-        .byte   $0c
-        .byte   $95
-        .byte   $88
-        .byte   $a5
-        .byte   $20
-        .byte   $f0
-        .byte   $03
-        .byte   $20
-        .byte   $e2
-        .byte   $93
-        .byte   $4c
-        .byte   $1a
-        .byte   $94
-        .byte   $0a
-        .byte   $a8
-        .byte   $b9
-        .byte   $5b
-        .byte   $a7
-        .byte   $85
-        .byte   $e5
-        .byte   $b9
-        .byte   $5c
-        .byte   $a7
-        .byte   $85
-        .byte   $e6
-        .byte   $b4
-        .byte   $85
-        .byte   $a9
-        .byte   $ff
-        .byte   $85
-        .byte   $de
-        .byte   $b1
-        .byte   $e5
-        .byte   $95
-        .byte   $8e
-        .byte   $85
-        .byte   $dd
-        .byte   $29
-        .byte   $1f
-        .byte   $95
-        .byte   $88
-        .byte   $24
-        .byte   $dd
-        .byte   $70
-        .byte   $5c
-        .byte   $f6
-        .byte   $85
-        .byte   $a5
-        .byte   $dd
-        .byte   $10
-        .byte   $35
-        .byte   $c8
-        .byte   $c8
-        .byte   $b1
-        .byte   $e5
-        .byte   $48
-        .byte   $29
-        .byte   $0f
-        .byte   $95
-        .byte   $94
-        .byte   $68
-        .text   "jjjj"
-        .byte   $85
-        .byte   $dc
-        .byte   $c9
-        .byte   $0f
-        .byte   $d0
-        .byte   $0d
-        .byte   $a9
-        .byte   $6d
-        .byte   $38
-        .byte   $e5
-        .byte   $82
-        .byte   $c9
-        .byte   $0f
-        .byte   $90
-        .byte   $02
-        .byte   $a9
-        .byte   $0f
-        .byte   $85
-        .byte   $dc
-        .byte   $a5
-        .byte   $20
-        .byte   $f0
-        .byte   $02
-        .byte   $46
-        .byte   $dc
-        .byte   $a5
-        .byte   $dc
-        .byte   $8d
-        .byte   $82
-        .byte   $ea
-        .byte   $8d
-        .byte   $18
-        .byte   $d4
-        .byte   $f6
-        .byte   $85
-        .byte   $88
-        .byte   $88
-        .byte   $b5
-        .byte   $8e
-        .byte   $c8
-        .byte   $b1
-        .byte   $e5
-        .byte   $95
-        .byte   $8b
-        .byte   $0a
-        .byte   $a8
-        .byte   $b9
-        .byte   $f4
-        .byte   $a1
-        .byte   $85
-        .byte   $dc
-        .text   " ",$93,$95,"P",$12
-        .byte   $b9
-        .byte   $f5
-        .byte   $a1
-        .byte   $a4
-        .byte   $e1
-        .byte   $99
-        .byte   $01
-        .byte   $d4
-        .byte   $a5
-        .byte   $dc
-        .byte   $99
-        .byte   $00
-        .byte   $d4
-        .byte   $4c
-        .byte   $b2
-        .byte   $94
-        .byte   $c6
-        .byte   $de
-        .byte   $a4
-        .byte   $e1
-        .byte   $b5
-        .byte   $94
-        .byte   $86
-        .byte   $e0
-        .byte   $0a
-        .byte   $0a
-        .byte   $0a
-        .byte   $aa
-        .byte   $bd
-        .byte   $f1
-        .byte   $a7
-        .byte   $85
-        .byte   $df
-        .text   " ",$93,$95,"P "
-        .byte   $bd
-        .byte   $f1
-        .byte   $a7
-        .byte   $25
-        .byte   $de
-        .byte   $99
-        .byte   $04
-        .byte   $d4
-        .byte   $bd
-        .byte   $ef
-        .byte   $a7
-        .byte   $99
-        .byte   $02
-        .byte   $d4
-        .byte   $bd
-        .byte   $f0
-        .byte   $a7
-        .byte   $99
-        .byte   $03
-        .byte   $d4
-        .byte   $bd
-        .byte   $f2
-        .byte   $a7
-        .byte   $99
-        .byte   $05
-        .byte   $d4
-        .byte   $bd
-        .byte   $f3
-        .byte   $a7
-        .byte   $99
-        .byte   $06
-        .byte   $d4
-        .byte   $a6
-        .byte   $e0
-        .byte   $a5
-        .byte   $df
-        .byte   $95
-        .byte   $91
-        .byte   $f6
-        .byte   $85
-        .byte   $b4
-        .byte   $85
-        .byte   $b1
-        .byte   $e5
-        .byte   $c9
-        .byte   $ff
-        .byte   $d0
-        .byte   $06
-        .byte   $a9
-        .byte   $00
-        .byte   $95
-        .byte   $85
-        .byte   $f6
-        .byte   $82
-        .byte   $4c
-        .byte   $8c
-        .byte   $95
-        .byte   $a4
-        .byte   $e1
-        .byte   $b5
-        .byte   $8e
-        .byte   $29
-        .byte   $20
-        .byte   $d0
-        .byte   $18
-        .text   " ",$93,$95,"P"
-        .byte   $13
-        .byte   $b5
-        .byte   $91
-        .byte   $29
-        .byte   $fe
-        .byte   $99
-        .byte   $04
-        .byte   $d4
-        .byte   $b5
-        .byte   $88
-        .byte   $d0
-        .byte   $08
-        .byte   $a9
-        .byte   $00
-        .text   $99,$05,"T",$99
-        .byte   $06
-        .byte   $d4
-        .byte   $b5
-        .byte   $94
-        .byte   $0a
-        .byte   $0a
-        .byte   $0a
-        .byte   $a8
-        .byte   $b9
-        .byte   $f4
-        .byte   $a7
-        .byte   $85
-        .byte   $e0
-        .byte   $f0
-        .byte   $60
-        .byte   $a5
-        .byte   $08
-        .byte   $29
-        .byte   $07
-        .byte   $c9
-        .byte   $04
-        .byte   $90
-        .byte   $02
-        .byte   $49
-        .byte   $07
-        .byte   $85
-        .byte   $de
-        .byte   $b5
-        .byte   $8b
-        .byte   $0a
-        .byte   $a8
-        .byte   $38
-        .byte   $b9
-        .byte   $f6
-        .byte   $a1
-        .byte   $f9
-        .byte   $f4
-        .byte   $a1
-        .byte   $85
-        .byte   $dc
-        .byte   $b9
-        .byte   $f7
-        .byte   $a1
-        .byte   $f9
-        .byte   $f5
-        .byte   $a1
-        .byte   $4a
-        .byte   $66
-        .byte   $dc
-        .byte   $c6
-        .byte   $e0
-        .byte   $10
-        .byte   $f9
-        .byte   $85
-        .byte   $dd
-        .byte   $b9
-        .byte   $f4
-        .byte   $a1
-        .byte   $85
-        .byte   $df
-        .byte   $b9
-        .byte   $f5
-        .byte   $a1
-        .byte   $85
-        .byte   $e0
-        .byte   $b5
-        .byte   $8e
-        .text   ")",$1f,"I",$05,$90
-        .byte   $15
-        .byte   $a4
-        .byte   $de
-        .byte   $88
-        .byte   $30
-        .byte   $10
-        .byte   $18
-        .byte   $a5
-        .byte   $df
-        .byte   $65
-        .byte   $dc
-        .byte   $85
-        .byte   $df
-        .byte   $a5
-        .byte   $e0
-        .byte   $65
-        .byte   $dd
-        .byte   $85
-        .byte   $e0
-        .byte   $4c
-        .byte   $68
-        .byte   $95
-        .byte   $a4
-        .byte   $e1
-        .text   " ",$93,$95,"P",$0a
-        .byte   $a5
-        .byte   $df
-        .byte   $99
-        .byte   $00
-        .byte   $d4
-        .byte   $a5
-        .byte   $e0
-        .byte   $99
-        .byte   $01
-        .byte   $d4
-        .byte   $ca
-        .byte   $30
-        .byte   $03
-        .byte   $4c
-        .byte   $f6
-        .byte   $93
-        .byte   $60
-        .byte   $a5
-        .byte   $98
-        .byte   $f0
-        .byte   $0b
-        .byte   $a9
-        .byte   $02
-        .byte   $cd
-        .byte   $75
-        .byte   $ea
-        .byte   $d0
-        .byte   $04
-        .byte   $a9
-        .byte   $ff
-        .byte   $d0
-        .byte   $02
-        .byte   $a9
-        .byte   $00
-        .byte   $60
+
+_L93E1  rts
+
+_L93E2  ldx     #$02
+_L93E4  lda     #$00
+        sta     $82,x
+        sta     $85,x
+        sta     $88,x
+        dex
+        bpl     _L93E4
+        rts
+
+_L93F0  bit     $47
+        bmi     _L93E1
+        ldx     #$02
+_L93F6  stx     $ea75
+        lda     _LA2B4,x
+        sta     $e1
+        tay
+        lda     $08
+        and     #$03
+        bne     _L941D
+        lda     _LA2B7,x
+        sta     $e3
+        lda     _LA2BA,x
+        sta     $e4
+        lda     $88,x
+        bmi     _L941A
+        dec     $88,x
+        bmi     _L9420
+        jmp     _L94FF
+
+_L941A  jmp     _L958C
+
+_L941D  jmp     _L951F
+
+_L9420  ldy     $82,x
+        lda     ($e3),y
+        cmp     #$ff
+        bne     _L9434
+        sta     $88,x
+        lda     $20
+        beq     _L9431
+        jsr     _L93E2
+_L9431  jmp     _L941A
+
+_L9434  asl     a
+        tay
+        lda     _LA75B,y
+        sta     $e5
+        lda     _LA75C,y
+        sta     $e6
+        ldy     $85,x
+        lda     #$ff
+        sta     $de
+        lda     ($e5),y
+        sta     $8e,x
+        sta     $dd
+        and     #$1f
+        sta     $88,x
+        bit     $dd
+        bvs     _L94B0
+        inc     $85,x
+        lda     $dd
+        bpl     _L948F
+        iny
+        iny
+        lda     ($e5),y
+        pha
+        and     #$0f
+        sta     $94,x
+        pla
+        lsr     a
+        lsr     a
+        lsr     a
+        lsr     a
+        sta     $dc
+        cmp     #$0f
+        bne     _L947B
+        lda     #$6d
+        sec
+        sbc     $82
+        cmp     #$0f
+        bcc     _L9479
+        lda     #$0f
+_L9479  sta     $dc
+_L947B  lda     $20
+        beq     _L9481
+        lsr     $dc
+_L9481  lda     $dc
+        sta     $ea82
+        sta     $d418
+        inc     $85,x
+        dey
+        dey
+        lda     $8e,x
+_L948F  iny
+        lda     ($e5),y
+        sta     $8b,x
+        asl     a
+        tay
+        lda     _LA1F4,y
+        sta     $dc
+        jsr     _L9593
+        bne     _L94B2
+        lda     _LA1F5,y
+        ldy     $e1
+        sta     $d401,y
+        lda     $dc
+        sta     $d400,y
+        jmp     _L94B2
+
+_L94B0  dec     $de
+_L94B2  ldy     $e1
+        lda     $94,x
+        stx     $e0
+        asl     a
+        asl     a
+        asl     a
+        tax
+        lda     _LA7F1,x
+        sta     $df
+        jsr     _L9593
+        bne     _L94E6
+        lda     _LA7F1,x
+        and     $de
+        sta     $d404,y
+        lda     _LA7EF,x
+        sta     $d402,y
+        lda     _LA7F0,x
+        sta     $d403,y
+        lda     _LA7F2,x
+        sta     $d405,y
+        lda     _LA7F3,x
+        sta     $d406,y
+_L94E6  ldx     $e0
+        lda     $df
+        sta     $91,x
+        inc     $85,x
+        ldy     $85,x
+        lda     ($e5),y
+        cmp     #$ff
+        bne     _L94FC
+        lda     #$00
+        sta     $85,x
+        inc     $82,x
+_L94FC  jmp     _L958C
+
+_L94FF  ldy     $e1
+        lda     $8e,x
+        and     #$20
+        bne     _L951F
+        jsr     _L9593
+        bne     _L951F
+        lda     $91,x
+        and     #$fe
+        sta     $d404,y
+        lda     $88,x
+        bne     _L951F
+        lda     #$00
+        sta     $d405,y
+        sta     $d406,y
+_L951F  lda     $94,x
+        asl     a
+        asl     a
+        asl     a
+        tay
+        lda     _LA7F4,y
+        sta     $e0
+        beq     _L958C
+        lda     $08
+        and     #$07
+        cmp     #$04
+        bcc     _L9536
+        eor     #$07
+_L9536  sta     $de
+        lda     $8b,x
+        asl     a
+        tay
+        sec
+        lda     _LA1F6,y
+        sbc     _LA1F4,y
+        sta     $dc
+        lda     _LA1F7,y
+        sbc     _LA1F5,y
+_L954B  lsr     a
+        ror     $dc
+        dec     $e0
+        bpl     _L954B
+        sta     $dd
+        lda     _LA1F4,y
+        sta     $df
+        lda     _LA1F5,y
+        sta     $e0
+        lda     $8e,x
+        and     #$1f
+        cmp     #$05
+        bcc     _L957B
+        ldy     $de
+_L9568  dey
+        bmi     _L957B
+        clc
+        lda     $df
+        adc     $dc
+        sta     $df
+        lda     $e0
+        adc     $dd
+        sta     $e0
+        jmp     _L9568
+
+_L957B  ldy     $e1
+        jsr     _L9593
+        bne     _L958C
+        lda     $df
+        sta     $d400,y
+        lda     $e0
+        sta     $d401,y
+_L958C  dex
+        bmi     _L9592
+        jmp     _L93F6
+
+_L9592  rts
+
+_L9593  lda     $98
+        beq     _L95A2
+        lda     #$02
+        cmp     $ea75
+        bne     _L95A2
+        lda     #$ff
+        bne     _L95A4
+
+_L95A2  lda     #$00
+_L95A4  rts
+
         .byte   $a2
         .byte   $07
         .byte   $a9
@@ -22736,56 +22284,30 @@ _L111E  .byte   $a9
         .byte   $10
         .byte   $f3
         .byte   $60
-        .byte   $a2
-        .byte   $00
-        .byte   $a9
-        .byte   $00
-        .byte   $9d
-        .byte   $00
-        .byte   $54
-        .byte   $9d
-        .byte   $00
-        .byte   $55
-        .byte   $9d
-        .byte   $00
-        .byte   $56
-        .byte   $9d
-        .byte   $c0
-        .byte   $56
-        .byte   $9d
-        .byte   $00
-        .byte   $d8
-        .byte   $9d
-        .byte   $00
-        .byte   $d9
-        .byte   $9d
-        .byte   $00
-        .byte   $da
-        .byte   $9d
-        .byte   $c0
-        .byte   $da
-        .byte   $e8
-        .byte   $d0
-        .byte   $e5
-        .byte   $86
-        .byte   $37
-        .byte   $a5
-        .byte   $3a
-        .byte   $c9
-        .byte   $11
-        .byte   $90
-        .byte   $0a
-        .byte   $a2
-        .byte   $26
-        .byte   $a9
-        .byte   $01
-        .byte   $9d
-        .byte   $70
-        .byte   $db
-        .byte   $ca
-        .byte   $10
-        .byte   $fa
-        .byte   $60
+
+        ldx     #$00
+        lda     #$00
+_L95BD  sta     _L5400,x
+        sta     _L5500,x
+        sta     _L5600,x
+        sta     _L56C0,x
+        sta     $d800,x
+        sta     $d900,x
+        sta     $da00,x
+        sta     $dac0,x
+        inx
+        bne     _L95BD
+        stx     $37
+        lda     $3a
+        cmp     #$11
+        bcc     _L95EA
+        ldx     #$26
+        lda     #$01
+_L95E4  sta     $db70,x
+        dex
+        bpl     _L95E4
+_L95EA  rts
+
         .byte   $86
         .byte   $23
         .byte   $84
@@ -22937,70 +22459,47 @@ _L111E  .byte   $a9
         .byte   $57
         .byte   $d8
         .byte   $60
-        .byte   $a2
-        .byte   $07
-        .byte   $a0
-        .byte   $00
-        .byte   $b1
-        .byte   $21
-        .byte   $c9
-        .byte   $ff
-        .byte   $d0
-        .byte   $0d
-        .byte   $a0
-        .byte   $00
-        .byte   $a9
-        .byte   $43
-        .byte   $85
-        .byte   $21
-        .byte   $a9
-        .byte   $64
-        .byte   $85
-        .text   $22,"lI",$96,"I",$0d
-        .byte   $f0
-        .byte   $15
-        .byte   $c9
-        .byte   $20
-        .byte   $d0
-        .byte   $02
-        .byte   $a9
-        .byte   $00
-        .byte   $c9
-        .byte   $40
-        .byte   $90
-        .byte   $02
-        .byte   $e9
-        .byte   $40
-        .byte   $9d
-        .byte   $70
-        .byte   $57
-        .byte   $c8
-        .byte   $e8
-        .byte   $e0
-        .text   "(",$90,"TH"
-        .byte   $18
-        .byte   $98
-        .byte   $65
-        .byte   $21
-        .byte   $85
-        .byte   $21
-        .byte   $a5
-        .byte   $22
-        .byte   $69
-        .byte   $00
-        .byte   $85
-        .byte   $22
-        .byte   $a9
-        .byte   $00
-        .byte   $9d
-        .byte   $70
-        .byte   $57
-        .byte   $e8
-        .byte   $e0
-        .byte   $28
-        .byte   $90
-        .byte   $f6
-        .byte   $60
+
+        ldx     #$07
+        ldy     #$00
+_L9686  lda     ($21),y
+        cmp     #$ff
+        bne     _L9699
+        ldy     #$00
+        lda     #$43
+        sta     $21
+        lda     #$64
+        sta     $22
+        jmp     _L96C9
+
+_L9699  cmp     #$0d
+        beq     _L96B2
+        cmp     #$20
+        bne     _L96A3
+        lda     #$00
+_L96A3  cmp     #$40
+        bcc     _L96A9
+        sbc     #$40
+_L96A9  sta     _L5770,x
+        iny
+        inx
+        cpx     #$28
+        bcc     _L9686
+_L96B2  iny
+        clc
+        tya
+        adc     $21
+        sta     $21
+        lda     $22
+        adc     #$00
+        sta     $22
+_L96BF  lda     #$00
+        sta     _L5770,x
+        inx
+        cpx     #$28
+        bcc     _L96BF
+_L96C9  rts
+
         .byte   $a2
         .byte   $ff
         .byte   $8e
@@ -23031,312 +22530,170 @@ _L111E  .byte   $a9
         .byte   $86
         .byte   $46
         .byte   $60
-        .byte   $a9
-        .byte   $ff
-        .byte   $8d
-        .byte   $00
-        .byte   $dc
-        .byte   $cd
-        .byte   $01
-        .byte   $dc
-        .byte   $d0
-        .byte   $63
-        .byte   $cd
-        .byte   $00
-        .byte   $dc
-        .byte   $d0
-        .byte   $5e
-        .byte   $a9
-        .byte   $3f
-        .byte   $85
-        .byte   $23
-        .byte   $a9
-        .byte   $ff
-        .byte   $85
-        .byte   $19
-        .byte   $a9
-        .byte   $00
-        .byte   $8d
-        .byte   $00
-        .byte   $dc
-        .byte   $ad
-        .byte   $01
-        .byte   $dc
-        .byte   $c9
-        .byte   $ff
-        .byte   $f0
-        .byte   $46
-        .byte   $a5
-        .byte   $23
-        .byte   $29
-        .byte   $07
-        .byte   $aa
-        .byte   $a5
-        .text   "#jjj"
-        .byte   $a8
-        .byte   $bd
-        .byte   $53
-        .byte   $37
-        .byte   $8d
-        .byte   $00
-        .byte   $dc
-        .byte   $ad
-        .byte   $01
-        .byte   $dc
-        .text   "9k7P"
-        .byte   $0b
-        .byte   $a6
-        .byte   $23
-        .byte   $bd
-        .text   $9e,"8I!"
-        .byte   $f0
-        .byte   $02
-        .byte   $86
-        .byte   $19
-        .byte   $c6
-        .byte   $23
-        .byte   $10
-        .byte   $d8
-        .byte   $a6
-        .byte   $19
-        .byte   $e0
-        .byte   $ff
-        .byte   $f0
-        .byte   $18
-        .byte   $bd
-        .byte   $9e
-        .byte   $38
-        .byte   $c5
-        .byte   $18
-        .byte   $f0
-        .byte   $15
-        .byte   $c9
-        .byte   $2f
-        .byte   $f0
-        .byte   $0d
-        .byte   $85
-        .byte   $17
-        .byte   $85
-        .byte   $18
-        .byte   $a9
-        .byte   $00
-        .byte   $85
-        .byte   $45
-        .byte   $85
-        .text   "flu",$97
-        .byte   $a9
-        .byte   $00
-        .byte   $85
-        .byte   $18
-        .byte   $60
-        .byte   $24
-        .byte   $02
-        .byte   $70
-        .byte   $02
-        .byte   $30
-        .byte   $10
-        .byte   $c6
-        .byte   $04
-        .byte   $a5
-        .byte   $04
-        .byte   $c9
-        .byte   $ff
-        .byte   $d0
-        .byte   $08
-        .byte   $c6
-        .byte   $05
-        .byte   $a5
-        .byte   $05
-        .byte   $29
-        .byte   $03
-        .byte   $85
-        .byte   $05
-        .byte   $a5
-        .byte   $04
-        .byte   $85
-        .byte   $dc
-        .byte   $a5
-        .byte   $05
-        .byte   $a2
-        .byte   $02
-        .byte   $4a
-        .byte   $66
-        .byte   $dc
-        .byte   $ca
-        .byte   $10
-        .byte   $fa
-        .byte   $a5
-        .byte   $dc
-        .byte   $49
-        .byte   $ff
-        .byte   $29
-        .byte   $7f
-        .byte   $a8
-        .byte   $e8
-        .byte   $b9
-        .text   "$6I P"
-        .byte   $02
-        .byte   $a9
-        .byte   $00
-        .byte   $c9
-        .byte   $40
-        .byte   $90
-        .byte   $02
-        .byte   $29
-        .byte   $3f
-        .byte   $9d
-        .byte   $c0
-        .byte   $57
-        .byte   $c8
-        .byte   $c0
-        .byte   $80
-        .byte   $90
-        .byte   $02
-        .byte   $a0
-        .byte   $00
-        .byte   $e8
-        .byte   $e0
-        .byte   $28
-        .byte   $90
-        .byte   $e2
-        .byte   $60
-        .byte   $a5
-        .byte   $04
-        .byte   $38
-        .byte   $e9
-        .byte   $b8
-        .byte   $85
-        .byte   $dc
-        .byte   $a5
-        .byte   $05
-        .byte   $e9
-        .byte   $03
-        .byte   $29
-        .byte   $03
-        .byte   $85
-        .byte   $dd
-        .byte   $a5
-        .byte   $dc
-        .byte   $8d
-        .byte   $0e
-        .byte   $d0
-        .byte   $a5
-        .byte   $dd
-        .byte   $4a
-        .byte   $6a
-        .byte   $29
-        .byte   $80
-        .byte   $85
-        .byte   $de
-        .byte   $ad
-        .byte   $10
-        .byte   $d0
-        .byte   $29
-        .byte   $7f
-        .byte   $05
-        .byte   $de
-        .byte   $8d
-        .byte   $10
-        .byte   $d0
-        .byte   $a9
-        .byte   $80
-        .byte   $a6
-        .byte   $dd
-        .byte   $e0
-        .byte   $02
-        .byte   $90
-        .byte   $01
-        .byte   $0a
-        .byte   $8d
-        .byte   $15
-        .byte   $d0
-        .byte   $a9
-        .byte   $f2
-        .byte   $8d
-        .byte   $0f
-        .byte   $d0
-        .byte   $a9
-        .byte   $02
-        .byte   $8d
-        .byte   $2e
-        .byte   $d0
-        .byte   $a9
-        .byte   $3b
-        .byte   $8d
-        .byte   $ff
-        .byte   $57
-        .byte   $a5
-        .byte   $04
-        .byte   $29
-        .byte   $07
-        .byte   $85
-        .byte   $dc
-        .byte   $ad
-        .byte   $16
-        .byte   $d0
-        .byte   $29
-        .byte   $e0
-        .byte   $05
-        .byte   $dc
-        .byte   $a8
-        .byte   $ad
-        .byte   $11
-        .byte   $d0
-        .byte   $29
-        .byte   $3f
-        .byte   $aa
-        .byte   $a9
-        .byte   $f2
-        .text   "M",$12,"PP"
-        .byte   $fb
-        .byte   $8c
-        .byte   $16
-        .byte   $d0
-        .byte   $8e
-        .byte   $11
-        .byte   $d0
-        .byte   $ad
-        .byte   $1c
-        .byte   $d0
-        .byte   $85
-        .byte   $dc
-        .byte   $29
-        .byte   $7f
-        .byte   $8d
-        .byte   $1c
-        .byte   $d0
-        .byte   $ad
-        .byte   $1b
-        .byte   $d0
-        .byte   $48
-        .byte   $09
-        .byte   $80
-        .byte   $8d
-        .byte   $1b
-        .byte   $d0
-        .byte   $a0
-        .byte   $f4
-        .byte   $be
-        .text   " 6L",$12,"PP"
-        .byte   $fb
-        .byte   $8e
-        .byte   $2e
-        .byte   $d0
-        .byte   $c8
-        .byte   $c0
-        .byte   $fc
-        .byte   $d0
-        .byte   $f0
-        .byte   $a5
-        .byte   $dc
-        .byte   $8d
-        .byte   $1c
-        .byte   $d0
-        .byte   $68
-        .byte   $8d
-        .byte   $1b
-        .byte   $d0
-        .byte   $60
+
+        lda     #$ff
+        sta     $dc00
+        cmp     $dc01
+        bne     _L9755
+        cmp     $dc00
+        bne     _L9755
+        lda     #$3f
+        sta     $23
+        lda     #$ff
+        sta     $19
+        lda     #$00
+        sta     $dc00
+        lda     $dc01
+        cmp     #$ff
+        beq     _L9751
+_L970B  lda     $23
+        and     #$07
+        tax
+        lda     $23
+        lsr     a
+        lsr     a
+        lsr     a
+        tay
+        lda     _L3753,x
+        sta     $dc00
+        lda     $dc01
+        and     _L374B,y
+        bne     _L972F
+        ldx     $23
+        lda     _L389E,x
+        cmp     #$21
+        beq     _L972F
+        stx     $19
+_L972F  dec     $23
+        bpl     _L970B
+        ldx     $19
+        cpx     #$ff
+        beq     _L9751
+        lda     _L389E,x
+        cmp     $18
+        beq     _L9755
+        cmp     #$2f
+        beq     _L9751
+        sta     $17
+        sta     $18
+        lda     #$00
+        sta     $45
+        sta     $46
+        jmp     _L9755
+
+_L9751  lda     #$00
+        sta     $18
+_L9755  rts
+
+_L9756  bit     $02
+        bvs     _L975C
+        bmi     _L976C
+_L975C  dec     $04
+        lda     $04
+        cmp     #$ff
+        bne     _L976C
+        dec     $05
+        lda     $05
+        and     #$03
+        sta     $05
+_L976C  lda     $04
+        sta     $dc
+        lda     $05
+        ldx     #$02
+_L9774  lsr     a
+        ror     $dc
+        dex
+        bpl     _L9774
+        lda     $dc
+        eor     #$ff
+        and     #$7f
+        tay
+        inx
+_L9782  lda     _L3624,y
+        cmp     #$20
+        bne     _L978B
+        lda     #$00
+_L978B  cmp     #$40
+        bcc     _L9791
+        and     #$3f
+_L9791  sta     _L57C0,x
+        iny
+        cpy     #$80
+        bcc     _L979B
+        ldy     #$00
+_L979B  inx
+        cpx     #$28
+        bcc     _L9782
+        rts
+
+_L97A1  lda     $04
+        sec
+        sbc     #$b8
+        sta     $dc
+        lda     $05
+        sbc     #$03
+        and     #$03
+        sta     $dd
+        lda     $dc
+        sta     $d00e
+        lda     $dd
+        lsr     a
+        ror     a
+        and     #$80
+        sta     $de
+        lda     $d010
+        and     #$7f
+        ora     $de
+        sta     $d010
+        lda     #$80
+        ldx     $dd
+        cpx     #$02
+        bcc     _L97D0
+        asl     a
+_L97D0  sta     $d015
+        lda     #$f2
+        sta     $d00f
+        lda     #$02
+        sta     $d02e
+        lda     #$3b
+        sta     _L57FF
+        lda     $04
+        and     #$07
+        sta     $dc
+        lda     $d016
+        and     #$e0
+        ora     $dc
+        tay
+        lda     $d011
+        and     #$3f
+        tax
+        lda     #$f2
+_L97F8  cmp     $d012
+        bne     _L97F8
+        sty     $d016
+        stx     $d011
+        lda     $d01c
+        sta     $dc
+        and     #$7f
+        sta     $d01c
+        lda     $d01b
+        pha
+        ora     #$80
+        sta     $d01b
+        ldy     #$f4
+_L9818  ldx     _L3620,y
+_L981B  cpy     $d012
+        bne     _L981B
+        stx     $d02e
+        iny
+        cpy     #$fc
+        bne     _L9818
+        lda     $dc
+        sta     $d01c
+        pla
+        sta     $d01b
+        rts
+
         .byte   $a5
         .text   "#I0P"
         .byte   $04
@@ -25442,10 +24799,10 @@ _L111E  .byte   $a9
         .byte   $04
         .byte   $03
         .byte   $03
-        .byte   $0c
-        .byte   $01
-        .byte   $1c
-        .byte   $01
+_LA1F4  .byte   $0c
+_LA1F5  .byte   $01
+_LA1F6  .byte   $1c
+_LA1F7  .byte   $01
         .byte   $2d
         .byte   $01
         .byte   $3e
@@ -25623,13 +24980,13 @@ _L111E  .byte   $a9
         .byte   $ee
         .byte   $2e
         .byte   $fd
-        .byte   $00
+_LA2B4  .byte   $00
         .byte   $07
         .byte   $0e
-        .byte   $bd
+_LA2B7  .byte   $bd
         .byte   $2b
         .byte   $99
-        .byte   $a2
+_LA2BA  .byte   $a2
         .byte   $a3
         .byte   $a3
         .fill   5,$01
@@ -26462,8 +25819,8 @@ _L111E  .byte   $a9
         .byte   $03
         .byte   $2f
         .byte   $ff
-        .byte   $07
-        .byte   $a4
+_LA75B  .byte   $07
+_LA75C  .byte   $a4
         .byte   $09
         .byte   $a4
         .byte   $1a
@@ -26605,12 +25962,12 @@ _L111E  .byte   $a9
         .byte   $49
         .byte   $a7
         .fill   6,$00
-        .byte   $40
-        .byte   $00
-        .byte   $41
-        .byte   $2f
-        .byte   $ff
-        .byte   $00
+_LA7EF  .byte   $40
+_LA7F0  .byte   $00
+_LA7F1  .byte   $41
+_LA7F2  .byte   $2f
+_LA7F3  .byte   $ff
+_LA7F4  .byte   $00
         .byte   $00
         .byte   $00
         .byte   $00
@@ -26820,7 +26177,7 @@ _L111E  .byte   $a9
         .fill   6,$01
         .fill   7,$02
         .fill   6,$03
-        .byte   $00
+_LA949  .byte   $00
         .byte   $07
         .byte   $07
         .byte   $07
