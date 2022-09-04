@@ -3568,7 +3568,7 @@ _L111E  .byte   $a9
         .byte   $4e
         .byte   $4d
 
-_L34F9  lsr     _L4E4D
+L34F9   lsr     L4E4D
         .text   "rrmnoorrmnmn"
         .byte   $84
         .byte   $85
@@ -3619,8 +3619,8 @@ _L34F9  lsr     _L4E4D
         .byte   $94
         .text   "lllllllllllllllll",$95,$96,$97,"m"
 
-_L356F  lsr     _L4E4D
-        eor     _L524E
+L356F   lsr     L4E4D
+        eor     L524E
         .text   "rmnoorrmnmn"
         .byte   $84
         .byte   $85
@@ -3749,7 +3749,7 @@ _L356F  lsr     _L4E4D
         .byte   $5e
         .text   "oooooo"
         .fill   20,$5f
-_L36A4  .fill   20,$5f
+L36A4   .fill   20,$5f
         .text   "oooooooooooooooooooooooooooooooooooooooo"
         .byte   $0e
         .byte   $0e
@@ -3772,7 +3772,7 @@ _L36A4  .fill   20,$5f
         .byte   $0a
         .byte   $0a
         .byte   $09
-_L371D  .byte   $09
+L371D   .byte   $09
         .byte   $09
         .byte   $09
         .byte   $0a
@@ -3803,11 +3803,11 @@ _L371D  .byte   $09
         .byte   $0a
         .byte   $0a
         .byte   $09
-_L374B  .byte   $09
+L374B   .byte   $09
         .byte   $09
         .byte   $09
         .text   $0a,$0a,$0a,$0a,$0a
-_L3753  .byte   $0a
+L3753   .byte   $0a
         .fill   8,$0e
         .text   $0a,$0a,$0a,$0a
         .byte   $88
@@ -3931,8 +3931,8 @@ _L3753  .byte   $0a
         .text   $0a,$0a,$0a,$0a
         .fill   22,$09
         .text   $0a,$0a,$0a,$0a
-_L381A  .byte   $0a
-_L381B  .byte   $0a
+L381A   .byte   $0a
+L381B   .byte   $0a
         .byte   $88
         .byte   $88
         .text   $0a,$0a,$0d,$0d
@@ -4002,7 +4002,7 @@ _L381B  .byte   $0a
         .byte   $88
         .byte   $0a
         .byte   $0a
-_L389E  .text   $0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a
+L389E   .text   $0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a
         .text   $0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a
         .byte   $88
         .byte   $88
@@ -4158,7 +4158,7 @@ _L389E  .text   $0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a,$0a
         .byte   $0a
         .byte   $0a
         .fill   124,$88
-_L3A04  .fill   36,$88
+L3A04   .fill   36,$88
         .fill   40,$0f
         .byte   $00
         .byte   $00
@@ -5128,7 +5128,7 @@ _L3A04  .fill   36,$88
         .byte   $aa
         .byte   $ff
         .byte   $ff
-_L3EBA  .byte   $ff
+L3EBA   .byte   $ff
         .byte   $ff
         .byte   $ff
         .byte   $aa
@@ -5144,7 +5144,7 @@ _L3EBA  .byte   $ff
         .byte   $aa
         .text   "*****"
         .byte   $aa
-_L3ECE  .byte   $aa
+L3ECE   .byte   $aa
         .byte   $aa
         .fill   5,$fe
         .byte   $aa
@@ -5155,7 +5155,7 @@ _L3ECE  .byte   $aa
         .fill   6,$aa
         .byte   $a8
         .byte   $58
-_L3EE2  .byte   $58
+L3EE2   .byte   $58
         .byte   $58
         .byte   $58
         .byte   $aa
@@ -5332,7 +5332,7 @@ _L3EE2  .byte   $58
         .byte   $00
         .byte   $02
         .byte   $aa
-_L3FB9  .byte   $aa
+L3FB9   .byte   $aa
         .byte   $aa
         .byte   $aa
         .byte   $aa
@@ -6448,9 +6448,9 @@ _L3FB9  .byte   $aa
         .byte   $61
         .byte   $62
         .text   "             "
-_L4640  .byte   $20
-_L4641  .byte   $20
-_L4642  .text   "        press f1 or f3 to start  ghostbusters"
+L4640   .byte   $20
+L4641   .byte   $20
+L4642   .text   "        press f1 or f3 to start  ghostbusters"
         .byte   $63
         .byte   $66
         .text   "   designed by david crane  cracked for tbc"
@@ -6563,9 +6563,9 @@ _L4642  .text   "        press f1 or f3 to start  ghostbusters"
         .byte   $00
         .byte   $03
         .fill   6,$00
-_L4740  .byte   $0e
-_L4741  .byte   $00
-_L4742  .byte   $08
+L4740   .byte   $0e
+L4741   .byte   $00
+L4742   .byte   $08
         .byte   $00
         .byte   $06
         .byte   $04
@@ -7438,7 +7438,7 @@ _L4742  .byte   $08
         .byte   $6a
         .byte   $70
         .byte   $77
-_L4E4D  .byte   $7e
+L4E4D   .byte   $7e
         .byte   $86
         .byte   $8e
         .byte   $96
@@ -7576,9 +7576,9 @@ _L4E4D  .byte   $7e
         .fill   8,$00
         .byte   $50
         .byte   $50
-_L4F00  .byte   $a8
-_L4F01  .byte   $c7
-_L4F02  .byte   $a8
+L4F00   .byte   $a8
+L4F01   .byte   $c7
+L4F02   .byte   $a8
         .byte   $c7
         .byte   $b0
         .byte   $ba
@@ -7715,9 +7715,9 @@ _L4F02  .byte   $a8
         .byte   $ff
         .byte   $aa
         .byte   $aa
-_L5000  .byte   $aa
-_L5001  .byte   $0e
-_L5002  .fill   6,$10
+L5000   .byte   $aa
+L5001   .byte   $0e
+L5002   .fill   6,$10
         .fill   6,$0e
         .byte   $10
         .byte   $10
@@ -8256,7 +8256,7 @@ _L5002  .fill   6,$10
         .byte   $5b
         .byte   $f2
         .byte   $08
-_L524E  .byte   $10
+L524E   .byte   $10
         .byte   $18
         .byte   $20
         .byte   $a9
@@ -11590,7 +11590,7 @@ _L5FF8  .byte   $fc
         lda     #$2f
         sta     $00
         ldx     #$2e
-_L602A  lda     _L371D,x
+_L602A  lda     L371D,x
         sta     $d000,x
         dex
         bpl     _L602A     ;Loop from 602A
@@ -11668,7 +11668,7 @@ _L60A2  lda     ($23),y
         ora     #$04
         sta     $01
         ldx     #$00
-_L60B8  lda     _L36A4,x
+_L60B8  lda     L36A4,x
         sta     _L58D8,x
         inx
         bpl     _L60B8
@@ -11747,24 +11747,24 @@ _L614A  inc     $23
 _L6150  rts
 
 _L6151  ldx     #$fc
-_L6153  ldy     _L4640,x
+_L6153  ldy     L4640,x
         lda     $e700,y
-        sta     _L4F02,x
-        ldy     _L4641,x
+        sta     L4F02,x
+        ldy     L4641,x
         lda     $e700,y
-        sta     _L4F01,x
-        ldy     _L4642,x
+        sta     L4F01,x
+        ldy     L4642,x
         lda     $e700,y
-        sta     _L4F00,x
-        ldy     _L4740,x
+        sta     L4F00,x
+        ldy     L4740,x
         lda     $e700,y
-        sta     _L5002,x
-        ldy     _L4741,x
+        sta     L5002,x
+        ldy     L4741,x
         lda     $e700,y
-        sta     _L5001,x
-        ldy     _L4742,x
+        sta     L5001,x
+        ldy     L4742,x
         lda     $e700,y
-        sta     _L5000,x
+        sta     L5000,x
         dex
         dex
         dex
@@ -11943,7 +11943,7 @@ _L62BD  sta     $ea73
         jsr     _L93E2
         jsr     _L929C
         jsr     _L91C8
-        cli
+        cli                ;Clear interrupt flag
 _L6305  lda     #$28       ;Load #28 which will be used to check if raster line
 _L6307  cmp     $d012      ;Compare current raster line to #28
         bne     _L6307     ;Loop until raster is at line 28
@@ -11957,12 +11957,12 @@ _L6307  cmp     $d012      ;Compare current raster line to #28
         sta     $d022      ;Extra background color #1 to white (used for logo and text)
         lda     #$02       ;Used for colour value (Red)
         sta     $d023      ;Extra background color #2 to red (used for logo)
-        jmp     _L6329
+        jmp     _L6329     ;Jump to $6329
 
         .byte   $00
 
-_L6329  jsr     _L96CA
-        jsr     _L96E8
+_L6329  jsr     Setup_Inputs
+        jsr     L96E8
         jsr     _L93F0
         jsr     _L91C8
         jsr     _L63BA
@@ -11984,11 +11984,11 @@ _L6353  lda     $9a
         and     #$07
         cmp     #$07
         bne     _L6385
-        ldx     #$27
-        lda     #$00
-_L6363  sta     _L5720,x
-        dex
-        bpl     _L6363
+        ldx     #$27       ;Set loop number
+        lda     #$00       ;Load #$00 value to blank out song text
+_L6363  sta     _L5720,x   ;Loop through characters to be cleared
+        dex                ;Decrease loop counter
+        bpl     _L6363     ;Continue loop if X != 0
         ldx     #$00
 _L636B  lda     _L5748,x
         sta     _L5720,x
@@ -12011,7 +12011,7 @@ _L6385  lda     $17
         sta     $17
         lda     #$01
         jsr     _L8DB9
-_L6396  jsr     _L96CA
+_L6396  jsr     Setup_Inputs
         lda     $19
         cmp     #$20
         bne     _L63A8
@@ -12049,17 +12049,17 @@ _L63D6  rts
 _L63D7  ldx     #$02
 _L63D9  dec     $88,x
         bpl     _L6421
-        lda     _LA2B7,x
+        lda     LA2B7,x
         sta     $e3
-        lda     _LA2BA,x
+        lda     LA2BA,x
         sta     $e4
         ldy     $82,x
         lda     ($e3),y
         asl     a
         tay
-        lda     _LA75B,y
+        lda     LA75B,y
         sta     $e5
-        lda     _LA75C,y
+        lda     LA75C,y
         sta     $e6
         ldy     $85,x
         lda     ($e5),y
@@ -13068,11 +13068,11 @@ _L7003  and     #$7f
 _L7011  lda     $64
         beq     _L7024
         bpl     _L701F
-        jsr     _L34F9
+        jsr     L34F9
         inc     $64
         jmp     _L7024
 
-_L701F  jsr     _L356F
+_L701F  jsr     L356F
         dec     $64
 _L7024  lda     $3a
         cmp     #$15
@@ -13090,7 +13090,7 @@ _L7024  lda     $3a
         sta     $a4
         sta     $a6
         ldx     $5c
-        lda     _LA992,x
+        lda     LA992,x
         sta     $a5
         sta     $a7
 _L704C  lda     $65
@@ -13102,16 +13102,16 @@ _L704C  lda     $65
 _L7058  lsr     a
         lsr     a
         tax
-        lda     _LA996,x
+        lda     LA996,x
         sta     $d029
-_L7061  jsr     _L96CA
+_L7061  jsr     Setup_Inputs
         lda     $02
         cmp     #$80
         beq     _L7070
         lda     #$1f
         sta     $33
         sta     $34
-_L7070  jsr     _L96E8
+_L7070  jsr     L96E8
         lda     $20
         cmp     #$01
         bne     _L708C
@@ -13197,9 +13197,9 @@ _L7110  lda     $09
         ora     #$10
         sta     $23
 _L7118  ldx     $23
-        lda     _L3EBA,x
+        lda     L3EBA,x
         sta     $0b
-        lda     _L3ECE,x
+        lda     L3ECE,x
         ora     #$d8
         sta     $0c
         lda     $c8,x
@@ -13213,7 +13213,7 @@ _L7118  ldx     $23
         lda     #$0d
         bne     _L713C
 
-_L7139  lda     _L3EE2,y
+_L7139  lda     L3EE2,y
 _L713C  sta     $25
         lda     #$2c
         cpx     #$04
@@ -13269,7 +13269,7 @@ _L7198  cpy     $4b
         sta     $e900,y
         iny
         bne     _L7198
-_L71A4  lda     _L3FB9,x
+_L71A4  lda     L3FB9,x
         cmp     #$ff
         beq     _L71C4
         cmp     #$20
@@ -13295,17 +13295,17 @@ _L71CD  tya
         sbc     #$43
         tax
         lda     $3e
-        jsr     _L99B7
-        jsr     _L9832
+        jsr     L99B7
+        jsr     L9832
         sta     $e912,x
         lda     $24
         sta     $e913,x
         lda     $6b
-        jsr     _L99B7
+        jsr     L99B7
         lda     $24
         sta     $e924,x
         lda     $3d
-        jsr     _L99B7
+        jsr     L99B7
         lda     $24
         sta     $e935,x
 _L71F6  lda     $3a
@@ -13376,18 +13376,18 @@ _L726D  lda     $3a
         lda     $4b
         bne     _L72BD
         lda     $5b
-        jsr     _L99B7
-        jsr     _L9832
+        jsr     L99B7
+        jsr     L9832
         sta     _L5783
         lda     $24
         sta     _L5784
         lda     $5a
-        jsr     _L99B7
+        jsr     L99B7
         sta     _L5785
         lda     $24
         sta     _L5786
         ldx     #$11
-_L729A  lda     _L3A04,x
+_L729A  lda     L3A04,x
         jsr     _L7615
         sta     _L5771,x
         dex
@@ -13395,7 +13395,7 @@ _L729A  lda     _L3A04,x
         lda     $3a
         cmp     #$2a
         bcs     _L72BD
-        jsr     _L9D24
+        jsr     L9D24
         ldx     #$06
 _L72B1  lda     $ea14,x
         jsr     _L7615
@@ -13408,7 +13408,7 @@ _L72BD  lda     $5b
         lsr     a
         lsr     a
         tax
-        lda     _L9DBA,x
+        lda     L9DBA,x
         sta     $3c
         ldy     #$00
         lda     $15
@@ -13463,7 +13463,7 @@ _L731A  ldy     #$12
         sty     $d414
         ldy     #$41
         sty     $d412
-_L733D  jsr     _L9C8F
+_L733D  jsr     L9C8F
 _L7340  dec     $16
         bpl     _L72D3
         jmp     _L8D8D
@@ -13486,7 +13486,7 @@ _L7347  lda     $50
         dec     $38
         dec     $50
         lda     #$20
-        jsr     _L9C88
+        jsr     L9C88
         dec     $38
         dec     $50
         jmp     _L7392
@@ -13497,7 +13497,7 @@ _L7377  lda     $38
         lda     #$01
         sta     $48
         lda     $17
-        jsr     _L9C88
+        jsr     L9C88
 _L7386  jmp     _L7392
 
 _L7389  ldx     $50
@@ -13511,19 +13511,19 @@ _L7396  jmp     _L8D8D
 _L7399  lda     $5e
         beq     _L73BD
         ldx     #$09
-_L739F  lda     _LAAD3,x
+_L739F  lda     LAAD3,x
         sta     _L541A,x
         lda     #$2d
         sta     _L546A,x
         dex
         bpl     _L739F
-        jsr     _L9D24
+        jsr     L9D24
         lda     #$01
         sta     $39
         lda     #$1c
         sta     $38
         lda     #$80
-        jsr     _L9BEE
+        jsr     L9BEE
 _L73BD  lda     $3a
         cmp     #$12
         bcs     _L73C6
@@ -13542,7 +13542,7 @@ _L73CC  lda     $c8,x
         cmp     #$0f
         bne     _L73E6
         lda     #$03
-        jsr     _L9895
+        jsr     L9895
         lda     #$00
         beq     _L73EE
 
@@ -13550,7 +13550,7 @@ _L73E6  and     #$0c
         lsr     a
         lsr     a
         tay
-        lda     _LA9B4,y
+        lda     LA9B4,y
 _L73EE  sta     $c8,x
 _L73F0  dex
         bpl     _L73CC
@@ -13566,7 +13566,7 @@ _L73F3  lda     $81
         adc     #$01
         sta     $5a
         lda     #$00
-        jsr     _L9897
+        jsr     L9897
 _L740C  lda     $06
         sta     $23
         lda     $81
@@ -13624,9 +13624,9 @@ _L745F  lda     #$10
 _L746D  lda     $3a
         asl     a
         tax
-        lda     _L381A,x
+        lda     L381A,x
         sta     $23
-        lda     _L381B,x
+        lda     L381B,x
         sta     $24
         jmp     ($0023)
 
@@ -20238,7 +20238,7 @@ _L9028  sta     $d000,x
         dex
         bpl     _L9028
         ldx     #$1d
-_L9033  lda     _LA837,x
+_L9033  lda     LA837,x
         sta     $ea28,x
         dex
         bpl     _L9033
@@ -21007,18 +21007,18 @@ _L93E4  lda     #$00
         rts
 
 _L93F0  bit     $47
-        bmi     _L93E1
+        bmi     _L93E1     ;Exit routine if negative
         ldx     #$02
 _L93F6  stx     $ea75
-        lda     _LA2B4,x
+        lda     LA2B4,x
         sta     $e1
         tay
         lda     $08
         and     #$03
         bne     _L941D
-        lda     _LA2B7,x
+        lda     LA2B7,x
         sta     $e3
-        lda     _LA2BA,x
+        lda     LA2BA,x
         sta     $e4
         lda     $88,x
         bmi     _L941A
@@ -21042,9 +21042,9 @@ _L9431  jmp     _L941A
 
 _L9434  asl     a
         tay
-        lda     _LA75B,y
+        lda     LA75B,y
         sta     $e5
-        lda     _LA75C,y
+        lda     LA75C,y
         sta     $e6
         ldy     $85,x
         lda     #$ff
@@ -21095,11 +21095,11 @@ _L948F  iny
         sta     $8b,x
         asl     a
         tay
-        lda     _LA1F4,y
+        lda     LA1F4,y
         sta     $dc
         jsr     _L9593
         bne     _L94B2
-        lda     _LA1F5,y
+        lda     LA1F5,y
         ldy     $e1
         sta     $d401,y
         lda     $dc
@@ -21114,20 +21114,20 @@ _L94B2  ldy     $e1
         asl     a
         asl     a
         tax
-        lda     _LA7F1,x
+        lda     LA7F1,x
         sta     $df
         jsr     _L9593
         bne     _L94E6
-        lda     _LA7F1,x
+        lda     LA7F1,x
         and     $de
         sta     $d404,y
-        lda     _LA7EF,x
+        lda     LA7EF,x
         sta     $d402,y
-        lda     _LA7F0,x
+        lda     LA7F0,x
         sta     $d403,y
-        lda     _LA7F2,x
+        lda     LA7F2,x
         sta     $d405,y
-        lda     _LA7F3,x
+        lda     LA7F3,x
         sta     $d406,y
 _L94E6  ldx     $e0
         lda     $df
@@ -21161,7 +21161,7 @@ _L951F  lda     $94,x
         asl     a
         asl     a
         tay
-        lda     _LA7F4,y
+        lda     LA7F4,y
         sta     $e0
         beq     _L958C
         lda     $08
@@ -21174,19 +21174,19 @@ _L9536  sta     $de
         asl     a
         tay
         sec
-        lda     _LA1F6,y
-        sbc     _LA1F4,y
+        lda     LA1F6,y
+        sbc     LA1F4,y
         sta     $dc
-        lda     _LA1F7,y
-        sbc     _LA1F5,y
+        lda     LA1F7,y
+        sbc     LA1F5,y
 _L954B  lsr     a
         ror     $dc
         dec     $e0
         bpl     _L954B
         sta     $dd
-        lda     _LA1F4,y
+        lda     LA1F4,y
         sta     $df
-        lda     _LA1F5,y
+        lda     LA1F5,y
         sta     $e0
         lda     $8e,x
         and     #$1f
@@ -21444,7 +21444,7 @@ _L9699  cmp     #$0d
 _L96A3  cmp     #$40
         bcc     _L96A9
         sbc     #$40
-_L96A9  sta     _L5770,x
+_L96A9  sta     _L5770,x   ;Update second row of song words
         iny
         inx
         cpx     #$28
@@ -21464,33 +21464,34 @@ _L96BF  lda     #$00
         bcc     _L96BF
 _L96C9  rts
 
-_L96CA  ldx     #$ff
-        stx     $dc02
-        stx     $dc00
-        inx
-        stx     $dc03
-        lda     $dc01
-        and     #$1f
+Setup_Inputs
+        ldx     #$ff       ;Load value for Port A data direction register
+        stx     $dc02      ;Set all bits to write on Port A data direction register
+        stx     $dc00      ;Select all keyboard matrix columns
+        inx                ;Increase X - goes to #00
+        stx     $dc03      ;Port B data direction register (read only)
+        lda     $dc01      ;Port B, keyboard matrix rows and joystick
+        and     #$1f       ;#1f (0001 1111)
         sta     $33
         lda     $33
         cmp     #$1f
-        beq     _L96E7
-        stx     $45
-        stx     $46
+        beq     _L96E7     ;Branch to $96E7 if Port B register is zero.
+        stx     $45        ;Not sure why this exists or if it would be triggered
+        stx     $46        ;Not sure why this exists or if it would be triggered
 _L96E7  rts
 
-_L96E8  lda     #$ff
-        sta     $dc00
-        cmp     $dc01
-        bne     _L9755
+L96E8   lda     #$ff       ;Load value for Port A keyboard matrix columns and joystick #2
+        sta     $dc00      ;Set all bits to write all keyboard matrix columns
+        cmp     $dc01      ;Compare Port B keyboard matrix rows and joystick #1 to #$ff
+        bne     _L9755     ;If $dc01 is not equal to #ff exist routine
         cmp     $dc00
-        bne     _L9755
+        bne     _L9755     ;If $dc00 is not equal to #ff exist routine
         lda     #$3f
         sta     $23
         lda     #$ff
         sta     $19
         lda     #$00
-        sta     $dc00
+        sta     $dc00      ;Set $dc00 to #00
         lda     $dc01
         cmp     #$ff
         beq     _L9751
@@ -21502,13 +21503,13 @@ _L970B  lda     $23
         lsr     a
         lsr     a
         tay
-        lda     _L3753,x
+        lda     L3753,x
         sta     $dc00
         lda     $dc01
-        and     _L374B,y
+        and     L374B,y
         bne     _L972F
         ldx     $23
-        lda     _L389E,x
+        lda     L389E,x
         cmp     #$21
         beq     _L972F
         stx     $19
@@ -21517,7 +21518,7 @@ _L972F  dec     $23
         ldx     $19
         cpx     #$ff
         beq     _L9751
-        lda     _L389E,x
+        lda     L389E,x
         cmp     $18
         beq     _L9755
         cmp     #$2f
@@ -21742,7 +21743,7 @@ _L9755  rts
         .byte   $d0
         .byte   $60
 
-_L9832  lda     $23
+L9832   lda     $23
         cmp     #$30
         bne     _L983C
         lda     #$00
@@ -21835,9 +21836,9 @@ _L983C  rts
         .byte   $d8
         .byte   $60
 
-_L9895  sed
+L9895   sed
         clc
-_L9897  pha
+L9897   pha
         lda     $5b
         and     #$f0
         sta     $ea72
@@ -22086,7 +22087,7 @@ _L98E9  cld
         .byte   $7d
         .byte   $60
 
-_L99B7  sta     $23
+L99B7   sta     $23
         and     #$0f
         clc
         adc     #$30
@@ -22637,7 +22638,7 @@ _L99B7  sta     $23
         .byte   $9b
         .byte   $60
 
-_L9BEE  bmi     _L9BF4
+L9BEE   bmi     _L9BF4
 
         .byte   $a2
         .byte   $00
@@ -22649,9 +22650,9 @@ _L9BF4  ldx     #$01
         sta     $4d
         asl     a
         tax
-        lda     _LB36D,x
+        lda     LB36D,x
         sta     $4e
-        lda     _LB36E,x
+        lda     LB36E,x
         sta     $4f
         rts
 
@@ -22773,10 +22774,10 @@ _L9BF4  ldx     #$01
         .byte   $50
         .byte   $60
 
-_L9C88  ldx     $50
+L9C88   ldx     $50
         sta     $e9ff,x
         inc     $50
-_L9C8F  cmp     #$00
+L9C8F   cmp     #$00
         sta     $26
         beq     _L9CF0
         bpl     _L9C9E
@@ -22797,7 +22798,7 @@ _L9CAF  sta     $25
         lda     #$15
         sta     $24
         ldy     $39
-        lda     _LAAE5,y
+        lda     LAAE5,y
         asl     a
         rol     $24
         asl     a
@@ -22874,7 +22875,7 @@ _L9CF0  rts
         .byte   $e3
         .byte   $60
 
-_L9D24  lda     $57
+L9D24   lda     $57
         sta     $23
         lda     $58
         sta     $24
@@ -22974,7 +22975,7 @@ _L9D95  rts
         .byte   $10
         .byte   $f0
         .byte   $60
-_L9DBA  .byte   $3f
+L9DBA   .byte   $3f
         .byte   $1f
         .byte   $0f
         .byte   $07
@@ -23726,10 +23727,10 @@ _L9DBA  .byte   $3f
         .byte   $04
         .byte   $03
         .byte   $03
-_LA1F4  .byte   $0c
-_LA1F5  .byte   $01
-_LA1F6  .byte   $1c
-_LA1F7  .byte   $01
+LA1F4   .byte   $0c
+LA1F5   .byte   $01
+LA1F6   .byte   $1c
+LA1F7   .byte   $01
         .byte   $2d
         .byte   $01
         .byte   $3e
@@ -23907,13 +23908,13 @@ _LA1F7  .byte   $01
         .byte   $ee
         .byte   $2e
         .byte   $fd
-_LA2B4  .byte   $00
+LA2B4   .byte   $00
         .byte   $07
         .byte   $0e
-_LA2B7  .byte   $bd
+LA2B7   .byte   $bd
         .byte   $2b
         .byte   $99
-_LA2BA  .byte   $a2
+LA2BA   .byte   $a2
         .byte   $a3
         .byte   $a3
         .fill   5,$01
@@ -24746,8 +24747,8 @@ _LA2BA  .byte   $a2
         .byte   $03
         .byte   $2f
         .byte   $ff
-_LA75B  .byte   $07
-_LA75C  .byte   $a4
+LA75B   .byte   $07
+LA75C   .byte   $a4
         .byte   $09
         .byte   $a4
         .byte   $1a
@@ -24889,12 +24890,12 @@ _LA75C  .byte   $a4
         .byte   $49
         .byte   $a7
         .fill   6,$00
-_LA7EF  .byte   $40
-_LA7F0  .byte   $00
-_LA7F1  .byte   $41
-_LA7F2  .byte   $2f
-_LA7F3  .byte   $ff
-_LA7F4  .byte   $00
+LA7EF   .byte   $40
+LA7F0   .byte   $00
+LA7F1   .byte   $41
+LA7F2   .byte   $2f
+LA7F3   .byte   $ff
+LA7F4   .byte   $00
         .byte   $00
         .byte   $00
         .byte   $00
@@ -24957,7 +24958,7 @@ _LA7F4  .byte   $00
         .byte   $03
         .byte   $00
         .byte   $00
-_LA837  .byte   $01
+LA837   .byte   $01
         .byte   $02
         .byte   $03
         .byte   $04
@@ -25132,11 +25133,11 @@ _LA837  .byte   $01
         .byte   $18
         .byte   $30
         .byte   $48
-_LA992  .byte   $86
+LA992   .byte   $86
         .byte   $87
         .byte   $84
         .byte   $94
-_LA996  .byte   $06
+LA996   .byte   $06
         .byte   $0e
         .byte   $03
         .byte   $01
@@ -25166,7 +25167,7 @@ _LA996  .byte   $06
         .byte   $01
         .byte   $04
         .byte   $01
-_LA9B4  .byte   $14
+LA9B4   .byte   $14
         .byte   $1c
         .byte   $f8
         .byte   $1f
@@ -25429,7 +25430,7 @@ _LA9B4  .byte   $14
         .byte   $00
         .byte   $20
         .byte   $40
-_LAAD3  .byte   $2d
+LAAD3   .byte   $2d
         .byte   $2d
         .byte   $03
         .byte   $12
@@ -25447,7 +25448,7 @@ _LAAD3  .byte   $2d
         .byte   $10
         .byte   $10
         .byte   $10
-_LAAE5  .byte   $00
+LAAE5   .byte   $00
         .byte   $0a
         .byte   $14
         .text   $1e,"(2<fpz"
@@ -25592,8 +25593,8 @@ _LAAE5  .byte   $00
         .byte   $ff
         .text   $0d,$0d,"  ending balance: "
         .byte   $ff
-_LB36D  .byte   $14
-_LB36E  .byte   $ea
+LB36D   .byte   $14
+LB36E   .byte   $ea
         .byte   $13
         .byte   $ab
         .byte   $e0
