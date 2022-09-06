@@ -12014,7 +12014,7 @@ _L6385  lda     $17
 _L6396  jsr     Setup_Inputs
         lda     $19
         cmp     #$20
-        bne     _L63A8
+        bne     _L63A8     ;Branch as input not detected
 _L639F  sta     $eab2
         jsr     _L63AF     ;Jump if F1 or F3 pressed
         jmp     _L6FE2
@@ -21489,7 +21489,7 @@ L96E8   lda     #$ff       ;Load value for Port A keyboard matrix columns and jo
         lda     #$3f
         sta     $23
         lda     #$ff
-        sta     $19
+        sta     $19        ;Store value for keypress (F1 or F3)
         lda     #$00
         sta     $dc00      ;Set $dc00 to #00
         lda     $dc01
