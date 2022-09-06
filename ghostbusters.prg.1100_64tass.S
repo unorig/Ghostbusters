@@ -12016,7 +12016,7 @@ _L6396  jsr     Setup_Inputs
         cmp     #$20
         bne     _L63A8
 _L639F  sta     $eab2
-        jsr     _L63AF
+        jsr     _L63AF     ;Jump if F1 or F3 pressed
         jmp     _L6FE2
 
 _L63A8  cmp     #$28
