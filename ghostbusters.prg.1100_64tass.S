@@ -12022,15 +12022,15 @@ _L6385  lda     $17
         jsr     _L8DB9
 _L6396  jsr     Setup_Inputs
         lda     $19
-        cmp     #$20
-        bne     _L63A8     ;Branch as input not detected
-_L639F  sta     $eab2
+        cmp     #$20       ;Check if F1 has been pressed
+        bne     _L63A8     ;Branch as F1 not pressed
+_L639F  sta     $eab2      ;Store F1 press value (#20) to $eab2
         jsr     _L63AF     ;Jump if F1 or F3 pressed
         jmp     _L6FE2
 
-_L63A8  cmp     #$28
-        beq     _L639F
-        jmp     _L6305
+_L63A8  cmp     #$28       ;Check if F3 has been pressed
+        beq     _L639F     ;Branch to F1 sequence above as F3 pressed
+        jmp     _L6305     ;Return to screen loop
 
 ;*****************************
 ;*   End start screen loop   *
