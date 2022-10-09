@@ -11571,7 +11571,10 @@ _L5FF8  .byte   $fc
         .byte   $a7
         .byte   $92
 
-        sei                ;Start of game sequence
+;*******************************************************************************
+;* Start of game sequence after load                                           *
+;*******************************************************************************
+        sei
         ldx     #$ff
         txs
         lda     #$08
@@ -11944,6 +11947,9 @@ _L62BD  sta     $ea73
         jsr     _L929C
         jsr     _L91C8
         cli                ;Clear interrupt flag
+;*******************************************************************************
+;* Begin Start screen loop                                                     *
+;*******************************************************************************
 _L6305  lda     #$28       ;Load #28 which will be used to check if raster line
 _L6307  cmp     $d012      ;Compare current raster line to #28
         bne     _L6307     ;Loop until raster is at line 28
@@ -11961,8 +11967,11 @@ _L6307  cmp     $d012      ;Compare current raster line to #28
 
         .byte   $00
 
-_L6329  jsr     Setup_Inputs
-        jsr     L96E8
+;*****************************
+;*   Start screen routines   *
+;*****************************
+_L6329  jsr     Setup_Inputs ;Start screen routines
+        jsr     Sub_CheckStartInput ;Checks for F1 or F3 at start screen
         jsr     _L93F0
         jsr     _L91C8
         jsr     _L63BA
@@ -12023,6 +12032,9 @@ _L63A8  cmp     #$28
         beq     _L639F
         jmp     _L6305
 
+;*****************************
+;*   End start screen loop   *
+;*****************************
 _L63AF  ldx     #$1f
         lda     #$00
 _L63B3  sta     $d400,x
@@ -13111,7 +13123,7 @@ _L7061  jsr     Setup_Inputs
         lda     #$1f
         sta     $33
         sta     $34
-_L7070  jsr     L96E8
+_L7070  jsr     Sub_CheckStartInput
         lda     $20
         cmp     #$01
         bne     _L708C
@@ -21475,12 +21487,13 @@ Setup_Inputs
         sta     $33
         lda     $33
         cmp     #$1f
-        beq     _L96E7     ;Branch to $96E7 if Port B register is zero.
+        beq     _L96E7     ;RTS from here. Branch to $96E7 if Port B register is zero.
         stx     $45        ;Not sure why this exists or if it would be triggered
         stx     $46        ;Not sure why this exists or if it would be triggered
 _L96E7  rts
 
-L96E8   lda     #$ff       ;Load value for Port A keyboard matrix columns and joystick #2
+Sub_CheckStartInput
+        lda     #$ff       ;(JSR from $632c) Load value for Port A keyboard matrix columns and joystick #2
         sta     $dc00      ;Set all bits to write all keyboard matrix columns
         cmp     $dc01      ;Compare Port B keyboard matrix rows and joystick #1 to #$ff
         bne     _L9755     ;If $dc01 is not equal to #ff exist routine
@@ -21489,30 +21502,30 @@ L96E8   lda     #$ff       ;Load value for Port A keyboard matrix columns and jo
         lda     #$3f
         sta     $23
         lda     #$ff
-        sta     $19        ;Store value for keypress (F1 or F3)
+        sta     $19        ;Reset value for keypress (F1 or F3)
         lda     #$00
         sta     $dc00      ;Set $dc00 to #00
         lda     $dc01
         cmp     #$ff
-        beq     _L9751
-_L970B  lda     $23
-        and     #$07
-        tax
-        lda     $23
-        lsr     a
-        lsr     a
-        lsr     a
-        tay
-        lda     L3753,x
-        sta     $dc00
+        beq     _L9751     ;Branch if no input has been received
+_L970B  lda     $23        ;Will be #3f
+        and     #$07       ;Will change to #7
+        tax                ;Transfer A to X
+        lda     $23        ;Load A with $23 (Which is $3f)
+        lsr     a          ;Divide by 2 (Becomes #1f)
+        lsr     a          ;Divide by 2 (Becomes #f)
+        lsr     a          ;Divide by 2 (Becomes #7)
+        tay                ;Transfer A to Y
+        lda     L3753,x    ;Load from $37fa
+        sta     $dc00      ;Set column of the matrix on Port A
         lda     $dc01
         and     L374B,y
         bne     _L972F
         ldx     $23
         lda     L389E,x
         cmp     #$21
-        beq     _L972F
-        stx     $19
+        beq     _L972F     ;Branch over next instruction if equal #21
+        stx     $19        ;Update $19 which is used to know if F1/F3 is pressed
 _L972F  dec     $23
         bpl     _L970B
         ldx     $19
@@ -21528,7 +21541,7 @@ _L972F  dec     $23
         lda     #$00
         sta     $45
         sta     $46
-        jmp     _L9755
+        jmp     _L9755     ;Jumps and then returns from subroutine
 
 _L9751  lda     #$00
         sta     $18
