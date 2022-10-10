@@ -8675,7 +8675,7 @@ L524E   .byte   $10
         .byte   $00
         .byte   $ad
         .byte   $db
-_L5400  .byte   $f4
+L5400   .byte   $f4
         .byte   $8d
         .byte   $1b
         .byte   $f4
@@ -8698,7 +8698,7 @@ _L5400  .byte   $f4
         .byte   $00
         .byte   $f0
         .byte   $38
-_L541A  .byte   $7d
+L541A   .byte   $7d
         .byte   $00
         .byte   $f0
         .byte   $6a
@@ -8757,7 +8757,7 @@ _L541A  .byte   $7d
         .byte   $8d
         .byte   $fa
         .byte   $ff
-_L5455  .byte   $a9
+L5455   .byte   $a9
         .byte   $01
         .byte   $85
         .byte   $ff
@@ -8778,7 +8778,7 @@ _L5455  .byte   $a9
         .byte   $ad
         .byte   $0f
         .byte   $dd
-_L546A  .byte   $29
+L546A   .byte   $29
         .byte   $01
         .byte   $60
         .byte   $a9
@@ -8797,7 +8797,7 @@ _L546A  .byte   $29
         .byte   $f4
         .byte   $4c
         .byte   $5f
-_L547D  .byte   $f4
+L547D   .byte   $f4
         .byte   $a9
         .byte   $91
         .byte   $8d
@@ -8837,7 +8837,7 @@ _L547D  .byte   $f4
         .byte   $f9
         .byte   $8a
         .byte   $29
-_L54A5  .byte   $03
+L54A5   .byte   $03
         .byte   $6d
         .byte   $e8
         .byte   $f4
@@ -8916,7 +8916,7 @@ _L54A5  .byte   $03
         .byte   $02
         .byte   $05
         .byte   $d7
-_L5500  .byte   $03
+L5500   .byte   $03
         .byte   $17
         .byte   $00
         .byte   $27
@@ -9156,7 +9156,7 @@ _L5500  .byte   $03
         .byte   $e9
         .byte   $17
         .byte   $c8
-_L5600  .byte   $17
+L5600   .byte   $17
         .byte   $87
         .byte   $15
         .byte   $e7
@@ -9328,7 +9328,7 @@ _L5600  .byte   $17
         .byte   $f9
         .byte   $7e
         .byte   $02
-_L56C0  .byte   $5a
+L56C0   .byte   $5a
         .byte   $8a
         .byte   $16
         .byte   $03
@@ -9412,7 +9412,7 @@ _L56C0  .byte   $5a
         .byte   $ca
         .byte   $86
         .byte   $07
-_L5720  .byte   $5f
+L5720   .byte   $5f
         .byte   $c9
         .byte   $d6
         .byte   $06
@@ -9452,7 +9452,7 @@ _L5720  .byte   $5f
         .byte   $e9
         .byte   $d6
         .byte   $06
-_L5748  .byte   $5b
+L5748   .byte   $5b
         .byte   $f4
         .byte   $00
         .byte   $00
@@ -9487,9 +9487,9 @@ _L5748  .byte   $5b
         .text   "33S",$9c,"I"
         .byte   $73
         .byte   $c9
-_L576F  .byte   $99
-_L5770  .byte   $d9
-_L5771  .byte   $8c
+L576F   .byte   $99
+L5770   .byte   $d9
+L5771   .byte   $8c
         .byte   $e3
         .byte   $c3
         .byte   $c7
@@ -9504,10 +9504,10 @@ _L5771  .byte   $8c
         .byte   $79
         .byte   $0c
         .byte   $3e
-_L5783  .byte   $cc
-_L5784  .byte   $71
-_L5785  .byte   $fc
-_L5786  .byte   $e1
+L5783   .byte   $cc
+L5784   .byte   $71
+L5785   .byte   $fc
+L5786   .byte   $e1
         .byte   $0f
         .byte   $97
         .byte   $1b
@@ -9515,7 +9515,7 @@ _L5786  .byte   $e1
         .byte   $e3
         .byte   $87
         .byte   $f1
-_L578E  .byte   $e0
+L578E   .byte   $e0
         .byte   $07
         .byte   $31
         .byte   $87
@@ -9565,7 +9565,7 @@ _L578E  .byte   $e0
         .byte   $e8
         .byte   $68
         .byte   $d6
-_L57C0  .byte   $83
+L57C0   .byte   $83
         .byte   $d3
         .byte   $15
         .byte   $1e
@@ -9617,7 +9617,7 @@ _L57C0  .byte   $83
         .byte   $75
         .byte   $c5
         .byte   $15
-_L57F8  .byte   $fd
+L57F8   .byte   $fd
         .byte   $a2
         .byte   $aa
         .byte   $54
@@ -9745,7 +9745,7 @@ _L57F8  .byte   $fd
         .byte   $77
         .byte   $98
         .byte   $a9
-_L5878  .byte   $8c
+L5878   .byte   $8c
         .byte   $77
         .byte   $66
         .byte   $87
@@ -9834,7 +9834,7 @@ _L5878  .byte   $8c
         .byte   $88
         .byte   $98
         .byte   $fb
-_L58D8  .byte   $8c
+L58D8   .byte   $8c
         .byte   $ca
         .byte   $3a
         .byte   $31
@@ -9988,7 +9988,7 @@ _L58D8  .byte   $8c
         .byte   $98
         .byte   $98
         .byte   $ea
-_L5980  .byte   $8c
+L5980   .byte   $8c
         .byte   $ca
         .byte   $3a
         .byte   $30
@@ -11562,7 +11562,7 @@ _L5980  .byte   $8c
         .byte   $00
         .byte   $00
         .byte   $ff
-_L5FF8  .byte   $fc
+L5FF8   .byte   $fc
         .byte   $00
         .byte   $a3
         .byte   $a4
@@ -11579,7 +11579,7 @@ _L5FF8  .byte   $fc
         txs
         lda     #$08
         sta     $d011
-        jsr     _L8FD8
+        jsr     L8FD8
         lda     #$25
         sta     $fffa      ;xecution address of non-maskable interrupt service routine.
         lda     #$64
@@ -11672,12 +11672,12 @@ _L60A2  lda     ($23),y
         sta     $01
         ldx     #$00
 _L60B8  lda     L36A4,x
-        sta     _L58D8,x
+        sta     L58D8,x
         inx
         bpl     _L60B8
         ldx     #$07
-_L60C3  lda     _L5878,x
-        sta     _L5980,x
+_L60C3  lda     L5878,x
+        sta     L5980,x
         dex
         bpl     _L60C3
         ldx     #$00
@@ -11779,9 +11779,9 @@ _L6153  ldy     L4640,x
         bne     _L6153
         dex
         bne     _L6153
-_L619A  jsr     _L9002
+_L619A  jsr     L9002
         inc     $06
-        jsr     _L63AF
+        jsr     L63AF
         lda     #$00
         sta     $23
         lda     #$d8
@@ -11826,12 +11826,12 @@ _L61E6  lda     ($25),y
         dex
         bpl     _L61E6
         ldx     #$1d
-_L61F6  lda     _L6EB0,x
-        sta     _L5455,x
-        lda     _L6ECE,x
-        sta     _L547D,x
-        lda     _L6EEC,x
-        sta     _L54A5,x
+_L61F6  lda     L6EB0,x
+        sta     L5455,x
+        lda     L6ECE,x
+        sta     L547D,x
+        lda     L6EEC,x
+        sta     L54A5,x
         dex
         bpl     _L61F6
         lda     #$0a
@@ -11878,7 +11878,7 @@ _L6244  lda     #$01
         lda     #$02
         sta     $d01c
         lda     #$0d
-        sta     _L57F8
+        sta     L57F8
         lda     #$00
         sta     $d025
         lda     #$01
@@ -11895,12 +11895,12 @@ _L6244  lda     #$01
         sta     $21
         lda     #$64
         sta     $22
-        jsr     _L93E2
+        jsr     L93E2
         lda     #$ff
         sta     $88
         sta     $89
         sta     $8a
-        jsr     _L929C
+        jsr     L929C
 _L629C  lda     $d011
         bpl     _L629C
         ldy     #$12
@@ -11937,24 +11937,26 @@ _L62BD  sta     $ea73
         lda     #$02
         sta     $d023
         lda     #$01
-        jsr     _L8DB9
+        jsr     L8DB9
         lda     #$03
-        jsr     _L8DB9
+        jsr     L8DB9
         lda     #$00
         sta     $08
         sta     $97
-        jsr     _L93E2
-        jsr     _L929C
-        jsr     _L91C8
+        jsr     L93E2
+        jsr     L929C
+        jsr     Sub_BouncingBall
         cli                ;Clear interrupt flag
-;*******************************************************************************
-;* Begin Start screen loop                                                     *
-;*******************************************************************************
-_L6305  lda     #$28       ;Load #28 which will be used to check if raster line
-_L6307  cmp     $d012      ;Compare current raster line to #28
-        bne     _L6307     ;Loop until raster is at line 28
+;*****************************
+;*  Begin Start screen loop  *
+;*****************************
+Sub_StartScreenMainLoop
+        lda     #$28       ;Load #28 which will be used to check if raster line
+Loop_CheckRaster
+        cmp     $d012      ;Compare current raster line to #28
+        bne     Loop_CheckRaster ;Loop until raster is at line 28
         lda     $d011      ;Screen control register #1
-        bmi     _L6305     ;Loop if Screen control register #1 is a negative value
+        bmi     Sub_StartScreenMainLoop ;Loop if Screen control register #1 is a negative value
         lda     #$18       ;Value for Screen control register #1
         sta     $d011      ;Set screen viewable and 25 rows
         lda     #$1b       ;Value for Screen control register #2
@@ -11963,90 +11965,93 @@ _L6307  cmp     $d012      ;Compare current raster line to #28
         sta     $d022      ;Extra background color #1 to white (used for logo and text)
         lda     #$02       ;Used for colour value (Red)
         sta     $d023      ;Extra background color #2 to red (used for logo)
-        jmp     _L6329     ;Jump to $6329
+        jmp     Sub_StartScreenRoutines ;Jump to $6329
 
         .byte   $00
 
 ;*****************************
 ;*   Start screen routines   *
 ;*****************************
-_L6329  jsr     Setup_Inputs ;Start screen routines
+Sub_StartScreenRoutines
+        jsr     Setup_Inputs ;Start screen routines
         jsr     Sub_CheckStartInput ;Checks for F1 or F3 at start screen
-        jsr     _L93F0
-        jsr     _L91C8
-        jsr     _L63BA
+        jsr     Sub_StartScreenMusic ;Loads music
+        jsr     Sub_BouncingBall
+        jsr     Sub_MusicText
         lda     $ea73
-        beq     _L634B
+        beq     _L634B     ;Cant see when this would be true
         lda     $08
         and     #$07
         cmp     #$01
         bne     _L634B
-        jsr     _L91C8
-        jsr     _L63BA
+        jsr     Sub_BouncingBall
+        jsr     Sub_MusicText
 _L634B  lda     $9a
-        beq     _L6385
+        beq     L6385
         dec     $9a
         bne     _L6353
 _L6353  lda     $9a
         and     #$0f
-        beq     _L6382
+        beq     L6382
         and     #$07
         cmp     #$07
-        bne     _L6385
+        bne     L6385
         ldx     #$27       ;Set loop number
         lda     #$00       ;Load #$00 value to blank out song text
-_L6363  sta     _L5720,x   ;Loop through characters to be cleared
+Loop_ClearCharacters
+        sta     L5720,x    ;Loop through characters to be cleared
         dex                ;Decrease loop counter
-        bpl     _L6363     ;Continue loop if X != 0
+        bpl     Loop_ClearCharacters ;Continue loop if X != 0
         ldx     #$00
-_L636B  lda     _L5748,x
-        sta     _L5720,x
+_L636B  lda     L5748,x
+        sta     L5720,x
         inx
         cpx     #$50
         bcc     _L636B
         ldx     #$27
         lda     #$00
-_L637A  sta     _L5770,x
+_L637A  sta     L5770,x
         dex
         bpl     _L637A
-        bmi     _L6385
+        bmi     L6385
 
-_L6382  jsr     _L9682
-_L6385  lda     $17
+L6382   jsr     L9682      ;This is triggered when the bouncing ball hits first word
+L6385   lda     $17
         cmp     #$20
         bne     _L6396
         lda     $9a
         bne     _L6396
         sta     $17
         lda     #$01
-        jsr     _L8DB9
+        jsr     L8DB9
 _L6396  jsr     Setup_Inputs
         lda     $19
         cmp     #$20       ;Check if F1 has been pressed
         bne     _L63A8     ;Branch as F1 not pressed
 _L639F  sta     $eab2      ;Store F1 press value (#20) to $eab2
-        jsr     _L63AF     ;Jump if F1 or F3 pressed
-        jmp     _L6FE2
+        jsr     L63AF      ;Jump to subroutine as F1 or F3 pressed
+        jmp     L6FE2
 
 _L63A8  cmp     #$28       ;Check if F3 has been pressed
         beq     _L639F     ;Branch to F1 sequence above as F3 pressed
-        jmp     _L6305     ;Return to screen loop
+        jmp     Sub_StartScreenMainLoop ;Return to screen loop
 
 ;*****************************
 ;*   End start screen loop   *
 ;*****************************
-_L63AF  ldx     #$1f
+L63AF   ldx     #$1f
         lda     #$00
 _L63B3  sta     $d400,x
         dex
         bpl     _L63B3
         rts
 
-_L63BA  inc     $08
+Sub_MusicText
+        inc     $08
         ldx     $97
         cpx     #$70
         beq     _L63D6
-        lda     _L68F0,x
+        lda     L68F0,x
         cmp     $08
         bne     _L63D6
         cmp     #$00
@@ -12058,7 +12063,7 @@ _L63BA  inc     $08
 _L63D4  inc     $97
 _L63D6  rts
 
-_L63D7  ldx     #$02
+L63D7   ldx     #$02
 _L63D9  dec     $88,x
         bpl     _L6421
         lda     LA2B7,x
@@ -12154,7 +12159,7 @@ _L6421  dex
         .text   "       ghostbusters(",$0d,"who you gonna call?",$0d,"       gh"
         .text   "ostbusters(",$0d
         .byte   $ff
-_L68F0  .byte   $02
+L68F0   .byte   $02
         .fill   5,$00
         .byte   $d1
         .byte   $00
@@ -12899,8 +12904,8 @@ _L68F0  .byte   $02
         .fill   7,$00
         .byte   $a0
         .fill   7,$00
-_L6EB0  .text   "@@@@@@ab@@@@@]]]]]]]]]]]]]]]]]"
-_L6ECE  .text   "cdefghijklmno"
+L6EB0   .text   "@@@@@@ab@@@@@]]]]]]]]]]]]]]]]]"
+L6ECE   .text   "cdefghijklmno"
         .byte   $5e
         .byte   $5f
         .byte   $60
@@ -12918,7 +12923,7 @@ _L6ECE  .text   "cdefghijklmno"
         .byte   $6c
         .byte   $6d
         .byte   $6e
-_L6EEC  .text   "pqrstuvwxyz["
+L6EEC   .text   "pqrstuvwxyz["
         .byte   $5c
         .byte   $5e
         .byte   $6f
@@ -13056,10 +13061,10 @@ _L6EEC  .text   "pqrstuvwxyz["
         .byte   $e9
         .fill   7,$7e
 
-_L6FE2  inc     $20
+L6FE2   inc     $20
         lda     #$1b
         sta     $d011
-        jsr     _L95B9
+        jsr     L95B9
 _L6FEC  lda     $e2
         beq     _L6FEC
         lda     #$00
@@ -13150,7 +13155,7 @@ _L708C  lda     $08
         lda     #$c0
         sta     $02
 _L70A2  ldx     #$0b
-_L70A4  jsr     _L9004
+_L70A4  jsr     L9004
         jmp     _L8D8D
 
 _L70AA  inc     $46
@@ -13375,7 +13380,7 @@ _L7251  lda     #$00
         lda     #$00
         sta     $23
 _L7262  and     $23
-        sta     _L5770,y
+        sta     L5770,y
         inx
         iny
         cpy     #$28
@@ -13390,18 +13395,18 @@ _L726D  lda     $3a
         lda     $5b
         jsr     L99B7
         jsr     L9832
-        sta     _L5783
+        sta     L5783
         lda     $24
-        sta     _L5784
+        sta     L5784
         lda     $5a
         jsr     L99B7
-        sta     _L5785
+        sta     L5785
         lda     $24
-        sta     _L5786
+        sta     L5786
         ldx     #$11
 _L729A  lda     L3A04,x
         jsr     _L7615
-        sta     _L5771,x
+        sta     L5771,x
         dex
         bpl     _L729A
         lda     $3a
@@ -13411,7 +13416,7 @@ _L729A  lda     L3A04,x
         ldx     #$06
 _L72B1  lda     $ea14,x
         jsr     _L7615
-        sta     _L578E,x
+        sta     L578E,x
         dex
         bpl     _L72B1
 _L72BD  lda     $5b
@@ -13524,9 +13529,9 @@ _L7399  lda     $5e
         beq     _L73BD
         ldx     #$09
 _L739F  lda     LAAD3,x
-        sta     _L541A,x
+        sta     L541A,x
         lda     #$2d
-        sta     _L546A,x
+        sta     L546A,x
         dex
         bpl     _L739F
         jsr     L9D24
@@ -19798,19 +19803,19 @@ _L8D8D  jmp     _L6FEC
         .byte   $15
         .byte   $60
 
-_L8DB9  sei
+L8DB9   sei
         inc     $eb
         pha
         lda     $20
         beq     _L8DDC
         ldy     #$07
         lda     #$ff
-_L8DC5  sta     _L5FF8,y
+_L8DC5  sta     L5FF8,y
         dey
         bpl     _L8DC5
         ldy     #$78
 _L8DCD  lda     #$ff
-        sta     _L576F,y
+        sta     L576F,y
         lda     #$00
         sta     $db6f,y
         dey
@@ -19818,9 +19823,9 @@ _L8DCD  lda     #$ff
         beq     _L8DF2
 
 _L8DDC  ldy     #$27
-_L8DDE  ldx     _L57C0,y
+_L8DDE  ldx     L57C0,y
         lda     #$00
-        sta     _L57C0,y
+        sta     L57C0,y
         txa
         sta     $ea8a,y
         dey
@@ -19847,9 +19852,9 @@ _L8E06  lda     $20
         lda     $08
         and     #$03
         bne     _L8E21
-        jsr     _L63D7
-_L8E21  jsr     _L63BA
-        jsr     _L91C8
+        jsr     L63D7
+_L8E21  jsr     Sub_MusicText
+        jsr     Sub_BouncingBall
 _L8E27  lda     #$ff
         jsr     $f080
         lsr     a
@@ -19874,7 +19879,7 @@ _L8E27  lda     #$ff
         beq     _L8E6A
         ldy     #$78
 _L8E5C  lda     #$00
-        sta     _L576F,y
+        sta     L576F,y
         lda     #$01
         sta     $db6f,y
         dey
@@ -19883,7 +19888,7 @@ _L8E5C  lda     #$00
 
 _L8E6A  ldy     #$27
 _L8E6C  lda     $ea8a,y
-        sta     _L57C0,y
+        sta     L57C0,y
         dey
         bpl     _L8E6C
         rts
@@ -19930,7 +19935,7 @@ _L8E6C  lda     $ea8a,y
         .text   "P v",$97,"l"
         .byte   $b7
         .byte   $8e
-_L8EA7  .byte   $fd
+L8EA7   .byte   $fd
         .byte   $fd
         .byte   $fd
         .byte   $fe
@@ -20207,7 +20212,7 @@ _L8EA7  .byte   $fd
         .byte   $68
         .byte   $40
 
-_L8FD8  lda     #$7f
+L8FD8   lda     #$7f
         sta     $dc0d      ;disable timer interrupts which can be generated by the two CIA chips
         sta     $dd0d      ;Interrupt control and status register
         ldx     #$00
@@ -20225,12 +20230,12 @@ _L8FD8  lda     #$7f
         sta     $dd00
         rts
 
-_L9002  ldx     #$11
-_L9004  lda     _L9051,x
+L9002   ldx     #$11
+L9004   lda     _L9051,x
         sta     $33,x
         dex
         cpx     #$ff
-        bne     _L9004
+        bne     L9004
         ldx     #$96
         lda     #$00
         sei
@@ -20262,7 +20267,7 @@ _L9033  lda     LA837,x
         sta     $d0
         lda     #$14
         sta     $d7
-        jsr     _L95B9
+        jsr     L95B9
         rts
 
 _L9051  .byte   $1f
@@ -20613,7 +20618,8 @@ _L9051  .byte   $1f
         .byte   $f5
         .byte   $60
 
-_L91C8  sta     $ea6d
+Sub_BouncingBall
+        sta     $ea6d
         stx     $ea6f
         sty     $ea6e
         lda     #$01
@@ -20658,7 +20664,7 @@ _L921D  lda     $ea6a
         sta     $ea6a
         lda     #$e0
         sta     $ea69
-_L9235  lda     _L8EA7,x
+_L9235  lda     L8EA7,x
         clc
         adc     $ea67
         sta     $ea67
@@ -20699,7 +20705,7 @@ _L926D  lda     $ea67
         ldy     $ea6e
         rts
 
-_L929C  ldx     #$00
+L929C   ldx     #$00
         stx     $ea66
         ldx     #$ba
         stx     $ea67
@@ -21007,9 +21013,9 @@ _L929C  ldx     #$00
         .byte   $86
         .byte   $bf
 
-_L93E1  rts
+L93E1   rts
 
-_L93E2  ldx     #$02
+L93E2   ldx     #$02
 _L93E4  lda     #$00
         sta     $82,x
         sta     $85,x
@@ -21018,8 +21024,9 @@ _L93E4  lda     #$00
         bpl     _L93E4
         rts
 
-_L93F0  bit     $47
-        bmi     _L93E1     ;Exit routine if negative
+Sub_StartScreenMusic
+        bit     $47
+        bmi     L93E1      ;Exit routine if negative
         ldx     #$02
 _L93F6  stx     $ea75
         lda     LA2B4,x
@@ -21049,7 +21056,7 @@ _L9420  ldy     $82,x
         sta     $88,x
         lda     $20
         beq     _L9431
-        jsr     _L93E2
+        jsr     L93E2
 _L9431  jmp     _L941A
 
 _L9434  asl     a
@@ -21261,12 +21268,12 @@ _L95A4  rts
         .byte   $f3
         .byte   $60
 
-_L95B9  ldx     #$00
+L95B9   ldx     #$00
         lda     #$00
-_L95BD  sta     _L5400,x
-        sta     _L5500,x
-        sta     _L5600,x
-        sta     _L56C0,x
+_L95BD  sta     L5400,x
+        sta     L5500,x
+        sta     L5600,x
+        sta     L56C0,x
         sta     $d800,x
         sta     $d900,x
         sta     $da00,x
@@ -21436,7 +21443,7 @@ _L95EA  rts
         .byte   $d8
         .byte   $60
 
-_L9682  ldx     #$07
+L9682   ldx     #$07
         ldy     #$00
 _L9686  lda     ($21),y
         cmp     #$ff
@@ -21456,7 +21463,7 @@ _L9699  cmp     #$0d
 _L96A3  cmp     #$40
         bcc     _L96A9
         sbc     #$40
-_L96A9  sta     _L5770,x   ;Update second row of song words
+_L96A9  sta     L5770,x    ;Update second row of song words
         iny
         inx
         cpx     #$28
@@ -21470,7 +21477,7 @@ _L96B2  iny
         adc     #$00
         sta     $22
 _L96BF  lda     #$00
-        sta     _L5770,x
+        sta     L5770,x
         inx
         cpx     #$28
         bcc     _L96BF
