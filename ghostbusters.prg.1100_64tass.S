@@ -21447,13 +21447,13 @@ L9682   ldx     #$07
         ldy     #$00
 _L9686  lda     ($21),y
         cmp     #$ff
-        bne     _L9699
+        bne     _L9699     ;Not if not end of song text
         ldy     #$00
         lda     #$43
         sta     $21
         lda     #$64
         sta     $22
-        jmp     _L96C9
+        jmp     _L96C9     ;Jump to RTS
 
 _L9699  cmp     #$0d
         beq     _L96B2
