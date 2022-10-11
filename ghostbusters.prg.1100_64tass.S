@@ -11998,21 +11998,23 @@ _L6353  lda     $9a
         bne     L6385
         ldx     #$27       ;Set loop number
         lda     #$00       ;Load #$00 value to blank out song text
-Loop_ClearCharacters
+Loop_ClearFirstSongRow
         sta     L5720,x    ;Loop through characters to be cleared
         dex                ;Decrease loop counter
-        bpl     Loop_ClearCharacters ;Continue loop if X != 0
+        bpl     Loop_ClearFirstSongRow ;Continue loop if X != 0
         ldx     #$00
-_L636B  lda     L5748,x
-        sta     L5720,x
+Loop_UpdateFirstLineSongText
+        lda     L5748,x    ;Copy line two song text
+        sta     L5720,x    ;Paste line two song text into line one above
         inx
-        cpx     #$50
-        bcc     _L636B
+        cpx     #$50       ;Set to #50 as it will be 80 characters
+        bcc     Loop_UpdateFirstLineSongText
         ldx     #$27
         lda     #$00
-_L637A  sta     L5770,x
+Loop_ClearSecondSongRow
+        sta     L5770,x
         dex
-        bpl     _L637A
+        bpl     Loop_ClearSecondSongRow
         bmi     L6385
 
 L6382   jsr     L9682      ;This is triggered when the bouncing ball hits first word
@@ -21447,7 +21449,7 @@ L9682   ldx     #$07
         ldy     #$00
 _L9686  lda     ($21),y
         cmp     #$ff
-        bne     _L9699     ;Not if not end of song text
+        bne     _L9699     ;Branch if not end of song text
         ldy     #$00
         lda     #$43
         sta     $21
