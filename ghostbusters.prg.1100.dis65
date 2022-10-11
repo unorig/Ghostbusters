@@ -70,15 +70,21 @@
 "21031":"Jump to $6329",
 "21035":"Start screen routines",
 "21038":"Checks for F1 or F3 at start screen",
+"21041":"Loads music",
+"21053":"Cant see when this would be true",
 "21089":"Set loop number",
 "21091":"Load #$00 value to blank out song text",
 "21093":"Loop through characters to be cleared",
 "21096":"Decrease loop counter",
 "21097":"Continue loop if X != 0",
+"21101":"Copy line two song text",
+"21104":"Paste line two song text into line one above",
+"21108":"Set to #50 as it will be 80 characters",
+"21124":"This is triggered when the bouncing ball hits first word",
 "21149":"Check if F1 has been pressed",
 "21151":"Branch as F1 not pressed",
 "21153":"Store F1 press value (#20) to $eab2",
-"21156":"Jump if F1 or F3 pressed",
+"21156":"Jump to subroutine as F1 or F3 pressed",
 "21162":"Check if F3 has been pressed",
 "21164":"Branch to F1 sequence above as F3 pressed",
 "21166":"Return to screen loop",
@@ -93,6 +99,8 @@
 "32500":"Port A data direction register",
 "32503":"Port A data direction register",
 "33524":"Exit routine if negative",
+"34188":"Branch if not end of song text",
+"34200":"Jump to RTS",
 "34219":"Update second row of song words",
 "34252":"Load value for Port A data direction register",
 "34254":"Set all bits to write on Port A data direction register",
@@ -140,9 +148,9 @@
 "BackgroundColor":0},
 
 "20999":{
-"Text":"Begin Start screen loop",
+"Text":" Begin Start screen loop",
 "BoxMode":true,
-"MaxWidth":80,
+"MaxWidth":30,
 "BackgroundColor":0},
 
 "21035":{
@@ -170,14 +178,20 @@
 "MaxWidth":80,
 "BackgroundColor":-256},
 
-"21144":{
-"Text":"Need to check why it is going from here\r\n",
+"21124":{
+"Text":"What is happening here",
 "BoxMode":false,
 "MaxWidth":80,
 "BackgroundColor":-18751},
 
 "21169":{
 "Text":"End: screen loop",
+"BoxMode":false,
+"MaxWidth":80,
+"BackgroundColor":-256},
+
+"24292":{
+"Text":"Begin game sequence after F1 or F3 pressed",
 "BoxMode":false,
 "MaxWidth":80,
 "BackgroundColor":-256},
@@ -205,6 +219,69 @@
 "34282":{
 "Label":"Sub_CheckStartInput",
 "Value":38632,
+"Source":"User",
+"Type":"GlobalAddr",
+"LabelAnno":"None"},
+
+"33522":{
+"Label":"Sub_StartScreenMusic",
+"Value":37872,
+"Source":"User",
+"Type":"GlobalAddr",
+"LabelAnno":"None"},
+
+"32970":{
+"Label":"Sub_BouncingBall",
+"Value":37320,
+"Source":"User",
+"Type":"GlobalAddr",
+"LabelAnno":"None"},
+
+"21180":{
+"Label":"Sub_MusicText",
+"Value":25530,
+"Source":"User",
+"Type":"GlobalAddr",
+"LabelAnno":"None"},
+
+"21035":{
+"Label":"Sub_StartScreenRoutines",
+"Value":25385,
+"Source":"User",
+"Type":"GlobalAddr",
+"LabelAnno":"None"},
+
+"20999":{
+"Label":"Sub_StartScreenMainLoop",
+"Value":25349,
+"Source":"User",
+"Type":"GlobalAddr",
+"LabelAnno":"None"},
+
+"21001":{
+"Label":"Loop_CheckRaster",
+"Value":25351,
+"Source":"User",
+"Type":"GlobalAddr",
+"LabelAnno":"None"},
+
+"21093":{
+"Label":"Loop_ClearFirstSongRow",
+"Value":25443,
+"Source":"User",
+"Type":"GlobalAddr",
+"LabelAnno":"None"},
+
+"21116":{
+"Label":"Loop_ClearSecondSongRow",
+"Value":25466,
+"Source":"User",
+"Type":"GlobalAddr",
+"LabelAnno":"None"},
+
+"21101":{
+"Label":"Loop_UpdateFirstLineSongText",
+"Value":25451,
 "Source":"User",
 "Type":"GlobalAddr",
 "LabelAnno":"None"}},
