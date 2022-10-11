@@ -12017,7 +12017,7 @@ Loop_ClearSecondSongRow
         bpl     Loop_ClearSecondSongRow
         bmi     L6385
 
-L6382   jsr     L9682      ;This is triggered when the bouncing ball hits first word
+L6382   jsr     Sub_LoadSongLineTwo ;This is triggered when the bouncing ball hits first word
 L6385   lda     $17
         cmp     #$20
         bne     _L6396
@@ -21445,7 +21445,8 @@ _L95EA  rts
         .byte   $d8
         .byte   $60
 
-L9682   ldx     #$07       ;Starts at 7 as song is indented by 7 characters
+Sub_LoadSongLineTwo
+        ldx     #$07       ;Starts at 7 as song is indented by 7 characters
         ldy     #$00
 Loop_ReadNextCharacter
         lda     ($21),y
@@ -21458,19 +21459,19 @@ Loop_ReadNextCharacter
         sta     $22
         jmp     _L96C9     ;Jump to RTS
 
-_L9699  cmp     #$0d       ;Compare to #0d (13)
-        beq     _L96B2
-        cmp     #$20       ;Compare to #20 (32)
-        bne     _L96A3
-        lda     #$00
-_L96A3  cmp     #$40       ;Compare to #40 (64)
-        bcc     _L96A9
-        sbc     #$40
-_L96A9  sta     L5770,x    ;Update second row of song words
+_L9699  cmp     #$0d       ;Check if end of song line (#0d is end of line)
+        beq     _L96B2     ;Branch as end of song line detected.
+        cmp     #$20       ;Compare to #20 (32). Checking if the song character is a space.
+        bne     _L96A3     ;Branch over next operation as character is not a space.
+        lda     #$00       ;Set A to #00 (A space character).
+_L96A3  cmp     #$40       ;Compare to #40 (64). Check if character is a letter or special character.
+        bcc     _L96A9     ;Character is not a letter. Do not subtract #40.
+        sbc     #$40       ;Subtract to get character address.
+_L96A9  sta     L5770,x    ;Update next character of song row two.
         iny                ;Increase Y
         inx                ;Increase X
-        cpx     #$28       ;Compare to #28 (40)
-        bcc     Loop_ReadNextCharacter
+        cpx     #$28       ;Compare to #28 (40). This checks if end of song line two.
+        bcc     Loop_ReadNextCharacter ;Continue loop if not at the end of the song line.
 _L96B2  iny
         clc
         tya
