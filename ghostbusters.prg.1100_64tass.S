@@ -12017,7 +12017,7 @@ Loop_ClearSecondSongRow
         bpl     Loop_ClearSecondSongRow
         bmi     L6385
 
-L6382   jsr     Sub_LoadSongLineTwo ;This is triggered when the bouncing ball hits first word
+L6382   jsr     Sub_LoadSongLineTwo ;Begin loading line two of song
 L6385   lda     $17
         cmp     #$20
         bne     _L6396
@@ -21454,10 +21454,10 @@ Loop_ReadNextCharacter
         bne     _L9699     ;Branch if not end of song text
         ldy     #$00
         lda     #$43
-        sta     $21
+        sta     $21        ;$21 is used for the character sequence in the song text.
         lda     #$64
         sta     $22
-        jmp     _L96C9     ;Jump to RTS
+        jmp     L96C9      ;Jump to RTS
 
 _L9699  cmp     #$0d       ;Check if end of song line (#0d is end of line)
         beq     _L96B2     ;Branch as end of song line detected.
@@ -21475,17 +21475,18 @@ _L96A9  sta     L5770,x    ;Update next character of song row two.
 _L96B2  iny
         clc
         tya
-        adc     $21
-        sta     $21
+        adc     $21        ;Update $21 to the next song character for the next line and loop.
+        sta     $21        ;Update/store updated value for $21
         lda     $22
         adc     #$00
         sta     $22
-_L96BF  lda     #$00
-        sta     L5770,x
+Loop_BlankOutLineTwo
+        lda     #$00       ;Load A with #00
+        sta     L5770,x    ;Blank out remaining song line two text.
         inx
         cpx     #$28
-        bcc     _L96BF
-_L96C9  rts
+        bcc     Loop_BlankOutLineTwo
+L96C9   rts
 
 Setup_Inputs
         ldx     #$ff       ;Load value for Port A data direction register
