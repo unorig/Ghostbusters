@@ -99,6 +99,10 @@
 "32499":"Decrease X",
 "32500":"Port A data direction register",
 "32503":"Port A data direction register",
+"32981":"Enable sprite #1 (Bouncing ball)",
+"32984":"Seems to be related to animation (vertical position of bouncing ball).",
+"32987":"Branch if ball not at lowest point",
+"32989":"ea71 used for number of bounces in one spot",
 "33524":"Exit routine if negative",
 "34180":"Starts at 7 as song is indented by 7 characters",
 "34188":"Branch if not end of song text",
@@ -121,12 +125,10 @@
 "34233":"Update/store updated value for $21",
 "34241":"Load A with #00",
 "34243":"Blank out remaining song line two text.",
-"34252":"Load value for Port A data direction register",
-"34254":"Set all bits to write on Port A data direction register",
-"34257":"Select all keyboard matrix columns",
+"34252":"Load value (#ff) for Port A data direction register",
+"34254":"Enable keyboard",
 "34260":"Increase X - goes to #00",
-"34261":"Port B data direction register (read only)",
-"34264":"Port B, keyboard matrix rows and joystick",
+"34261":"Enable joystick port 2",
 "34267":"#1f (0001 1111)",
 "34275":"RTS from here. Branch to $96E7 if Port B register is zero.",
 "34277":"Not sure why this exists or if it would be triggered",
@@ -182,6 +184,12 @@
 "Text":"  End start screen loop",
 "BoxMode":true,
 "MaxWidth":30,
+"BackgroundColor":0},
+
+"32970":{
+"Text":"   Start Bouncing Ball ",
+"BoxMode":true,
+"MaxWidth":30,
 "BackgroundColor":0}},
 
 "Notes":{
@@ -205,6 +213,18 @@
 
 "24292":{
 "Text":"Begin game sequence after F1 or F3 pressed",
+"BoxMode":false,
+"MaxWidth":80,
+"BackgroundColor":-256},
+
+"32970":{
+"Text":"Begin: Bouncing ball\r\n",
+"BoxMode":false,
+"MaxWidth":80,
+"BackgroundColor":-256},
+
+"33181":{
+"Text":"End: Bouncing ball\r\n",
 "BoxMode":false,
 "MaxWidth":80,
 "BackgroundColor":-256},
@@ -244,14 +264,14 @@
 "LabelAnno":"None"},
 
 "32970":{
-"Label":"Sub_BouncingBall",
+"Label":"Sub_StartScreenBouncingBall",
 "Value":37320,
 "Source":"User",
 "Type":"GlobalAddr",
 "LabelAnno":"None"},
 
 "21180":{
-"Label":"Sub_MusicText",
+"Label":"Sub_StartScreenMusicText",
 "Value":25530,
 "Source":"User",
 "Type":"GlobalAddr",
@@ -316,6 +336,13 @@
 "34241":{
 "Label":"Loop_BlankOutLineTwo",
 "Value":38591,
+"Source":"User",
+"Type":"GlobalAddr",
+"LabelAnno":"None"},
+
+"33079":{
+"Label":"BallBounceUp",
+"Value":37429,
 "Source":"User",
 "Type":"GlobalAddr",
 "LabelAnno":"None"}},
