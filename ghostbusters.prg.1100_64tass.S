@@ -11945,7 +11945,7 @@ _L62BD  sta     $ea73
         sta     $97
         jsr     L93E2
         jsr     L929C
-        jsr     Sub_BouncingBall
+        jsr     Sub_StartScreenBouncingBall
         cli                ;Clear interrupt flag
 ;*****************************
 ;*  Begin Start screen loop  *
@@ -11976,16 +11976,16 @@ Sub_StartScreenRoutines
         jsr     Setup_Inputs ;Start screen routines
         jsr     Sub_CheckStartInput ;Checks for F1 or F3 at start screen
         jsr     Sub_StartScreenMusic ;Loads music
-        jsr     Sub_BouncingBall
-        jsr     Sub_MusicText
+        jsr     Sub_StartScreenBouncingBall
+        jsr     Sub_StartScreenMusicText
         lda     $ea73
         beq     _L634B     ;Cant see when this would be true
         lda     $08
         and     #$07
         cmp     #$01
         bne     _L634B
-        jsr     Sub_BouncingBall
-        jsr     Sub_MusicText
+        jsr     Sub_StartScreenBouncingBall
+        jsr     Sub_StartScreenMusicText
 _L634B  lda     $9a
         beq     L6385
         dec     $9a
@@ -12048,7 +12048,7 @@ _L63B3  sta     $d400,x
         bpl     _L63B3
         rts
 
-Sub_MusicText
+Sub_StartScreenMusicText
         inc     $08
         ldx     $97
         cpx     #$70
@@ -19855,8 +19855,8 @@ _L8E06  lda     $20
         and     #$03
         bne     _L8E21
         jsr     L63D7
-_L8E21  jsr     Sub_MusicText
-        jsr     Sub_BouncingBall
+_L8E21  jsr     Sub_StartScreenMusicText
+        jsr     Sub_StartScreenBouncingBall
 _L8E27  lda     #$ff
         jsr     $f080
         lsr     a
@@ -20620,16 +20620,19 @@ _L9051  .byte   $1f
         .byte   $f5
         .byte   $60
 
-Sub_BouncingBall
+;*****************************
+;*    Start Bouncing Ball    *
+;*****************************
+Sub_StartScreenBouncingBall
         sta     $ea6d
         stx     $ea6f
         sty     $ea6e
         lda     #$01
-        sta     $d015
-        ldx     $ea6b
-        bne     _L9235
-        dec     $ea71
-        bpl     _L9235
+        sta     $d015      ;Enable sprite #1 (Bouncing ball)
+        ldx     $ea6b      ;Seems to be related to animation (vertical position of bouncing ball).
+        bne     BallBounceUp ;Branch if ball not at lowest point
+        dec     $ea71      ;ea71 used for number of bounces in one spot
+        bpl     BallBounceUp
         ldy     #$00
         sty     $ea71
         lda     $ea69
@@ -20658,15 +20661,16 @@ _L9212  sta     $ea6c
         inc     $ea6a
 _L921D  lda     $ea6a
         cmp     #$93
-        bcc     _L9235
+        bcc     BallBounceUp
         lda     $ea69
         cmp     #$e1
-        bcc     _L9235
+        bcc     BallBounceUp
         lda     #$93
         sta     $ea6a
         lda     #$e0
         sta     $ea69
-_L9235  lda     L8EA7,x
+BallBounceUp
+        lda     L8EA7,x
         clc
         adc     $ea67
         sta     $ea67
@@ -21489,12 +21493,12 @@ Loop_BlankOutLineTwo
 L96C9   rts
 
 Setup_Inputs
-        ldx     #$ff       ;Load value for Port A data direction register
-        stx     $dc02      ;Set all bits to write on Port A data direction register
-        stx     $dc00      ;Select all keyboard matrix columns
+        ldx     #$ff       ;Load value (#ff) for Port A data direction register
+        stx     $dc02      ;Enable keyboard
+        stx     $dc00
         inx                ;Increase X - goes to #00
-        stx     $dc03      ;Port B data direction register (read only)
-        lda     $dc01      ;Port B, keyboard matrix rows and joystick
+        stx     $dc03      ;Enable joystick port 2
+        lda     $dc01
         and     #$1f       ;#1f (0001 1111)
         sta     $33
         lda     $33
