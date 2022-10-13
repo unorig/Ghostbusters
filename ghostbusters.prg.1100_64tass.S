@@ -18262,7 +18262,7 @@ L6EEC   .byte   $50
 L6FE2   inc     $20
         lda     #$1b
         sta     $d011
-        jsr     L95B9
+        jsr     Sub_LoadNameScreen
 _L6FEC  lda     $e2
         beq     _L6FEC
         lda     #$00
@@ -25249,14 +25249,11 @@ _L7624  rts
         .byte   $4c
         .byte   $8d
         .byte   $8d
-        .byte   $a9
-        .byte   $00
-        .byte   $85
-        .byte   $17
-        .byte   $e6
-        .byte   $3a
-        .byte   $ea
 
+        lda     #$00
+        sta     $17
+        inc     $3a
+        nop
 _L8D8D  jmp     _L6FEC
 
         .byte   $0c
@@ -25626,7 +25623,7 @@ _L9033  lda     LA837,x
         sta     $d0
         lda     #$14
         sta     $d7
-        jsr     L95B9
+        jsr     Sub_LoadNameScreen
 L9050   rts
 
 L9051   .byte   $1f
@@ -26659,7 +26656,8 @@ _L95A4  rts
         .byte   $f3
         .byte   $60
 
-L95B9   ldx     #$00
+Sub_LoadNameScreen
+        ldx     #$00
         lda     #$00
 _L95BD  sta     L5400,x
         sta     L5500,x
