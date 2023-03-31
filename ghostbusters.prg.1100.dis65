@@ -345,6 +345,27 @@
 "Value":37429,
 "Source":"User",
 "Type":"GlobalAddr",
+"LabelAnno":"None"},
+
+"24302":{
+"Label":"loop",
+"Value":28652,
+"Source":"User",
+"Type":"NonUniqueLocalAddr",
+"LabelAnno":"None"},
+
+"24325":{
+"Label":"skip",
+"Value":28675,
+"Source":"User",
+"Type":"NonUniqueLocalAddr",
+"LabelAnno":"None"},
+
+"24339":{
+"Label":"skip",
+"Value":28689,
+"Source":"User",
+"Type":"NonUniqueLocalAddr",
 "LabelAnno":"None"}},
 
 "OperandFormats":{
